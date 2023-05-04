@@ -1,4 +1,9 @@
 nav{
     display: flex;
-    background-color: white;
+    width: 100vw;
+    background-color: pink;
+    margin: 0px;
+}
+.logo{
+    width: 5em;
 }
