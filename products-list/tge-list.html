@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tge-list.css">
     <title>Product List</title>
 </head>
 <body>
@@ -26,9 +27,12 @@
             </g>
           </svg>
 
+        <section id="brandmenu">         
+          <a href="#">Brand:</a>
+            <!--missing : in other filter section, need to add one in the adobexd-->
+          <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
         <ul id="brand">
-            <h1>Brand:</h1> <!--missing : in other filter section, need to add one in the adobexd-->
-            <img src="/assets-elements/dropdown.png" alt="dropdown">
             <li>Beltona</li>
             <li>Gibson</li>
             <li>Gretsch</li>
@@ -38,9 +42,11 @@
             <li>Other</li>
         </ul>
 
-        <ul id="bodyshape">
-            <h1>Body shape:</h1>
+        <section id="bodyshapemenu">
+            <a href="#">Body shape:</a>
             <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="bodyshape">
             <li>Standard</li>
             <li>Parlor</li>
             <li>OO</li> <!--the letter O-->
@@ -52,9 +58,11 @@
             <li>Other</li>
         </ul>
 
-        <ul id="finishcolour"></ul>
-            <h1>Finish colour:</h1>
+        <section id="finishcolourmenu">
+            <a href="#">Finish colour:</a>
             <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="finishcolour"></ul>
             <li>Sunburst</li>
             <li>Black</li>
             <li>Polyurethane</li>
@@ -62,9 +70,11 @@
             <li>Other</li>
         </ul>
 
-        <ul id="material">
-            <h1>Material:</h1>
+        <section id="materialmenu">
+            <a href="#">Material:</a>
             <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="material">
             <li>Mahogany</li>
             <li>Maple</li>
             <li>Basswood</li>
@@ -73,9 +83,11 @@
             <li>Other</li>
         </ul>
 
-        <ul id="placeofmanufacture">
-            <h1>Place of manufacture:</h1>
+        <section id="placeofmanufacturemenu">
+            <a href="#">Place of manufacture:</a>
             <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="placeofmanufacture">
             <li>Japan</li>
             <li>UK</li>
             <li>USA</li>
@@ -83,9 +95,11 @@
             <li>Other</li>
         </ul>
 
-        <ul id="yearrange">
-            <h1>Year range:</h1>
+        <section id="yearrangemenu">
+            <a href="#">Year range:</a>
             <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="yearrange">
             <li>since 1800s</li>
             <li>since 1900s</li>
             <li>since 2000s</li>
@@ -107,7 +121,6 @@
           
 
         <ul id="sorting">
-            <h1>Sort by</h1>
             <li>Price from low to high</li>
             <li>Price from high to low</li>
             <li>Latest (Default)</li>
