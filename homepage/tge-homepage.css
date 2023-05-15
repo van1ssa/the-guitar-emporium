@@ -1,9 +1,35 @@
-nav{
+@import url(/A-Master-Styles/reset-styling.css);
+
+.navbar{
     display: flex;
-    width: 100vw;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
     background-color: pink;
-    margin: 0px;
+    margin: 0;
 }
+.shop-dropdown{
+    display: none;
+}
+.shop-dropdown-display{
+    display: initial;
+}
+
+nav li:hover{
+    color: red; 
+}
+
 .logo{
     width: 5em;
+}
+
+.hamburger{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: lightskyblue;
 }
