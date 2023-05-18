@@ -1,0 +1,19 @@
+:root{
+    --primary-colour: #E14842;
+    --secondary-colour: #F7E3A0;
+    --teritary-colour: #464C7F;
+
+    --black-colour: #191919;
+    --white-colour: #FFF6D8;
+
+    --right-colour: #90EE90;
+    --wrong-colour: #ffb6c1;
+}
+
+input:valid{
+    background-color: var(--right-colour);
+}
+
+input:invalid{
+    background-color: var(--wrong-colour);
+}

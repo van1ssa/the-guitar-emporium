@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>This is the contact form page.</h1>
+
+    <form action="after.html">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required minlength="2" placeholder="put your name" pattern="[a-z|A-Z| |-]*"
+        oninvalid="this.setCustomValidity('Please enter only letter, space and hyphen')"> <!--can put some default text with placeholder-->
+
+        <label for="tel">Your phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="put your phone number" pattern="[0-9| | ()]*"
+        oninvalid="this.setCustomValidity('Please enter only digits, brackets, hyphne')">
+
+
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="comment">Your thoughtsL:</label>
+        <textarea name="comment" id="comment" cols="30" rows="10">put your comment here</textarea> <!--can put some default text in it-->
+
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+</html>
