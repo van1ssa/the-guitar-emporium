@@ -12,21 +12,33 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="tge-homepage.html"></a><img src="/assets-imgaes/TGE Logo coloured.svg" 
-            alt="TGE-logo" class="logo"></nav>
-            
-            <ul>
-                <li>SHOP</li>
-                <li>ABOUT</li>
-                <li>SERVICES</li>
-                <li>OUR FRIENDS</li>
-                <li>CONTACT</li>
+        <nav class="navbar" id="navbar">
+            <ul class="TGE-logo">
+                <li><a href="tge-homepage.html"></a><img src="/assets-imgaes/TGE Logo coloured.svg" 
+                    alt="TGE-logo" class="logo"></n></li>
+            </ul>        
+            <ul class="menu-items" id="menu-items">    
+                    <li><a href="#shopall">SHOP</a>
+                    <ul class="shop-dropdown" onclick="toggleResponsive()">
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Electric  Guitars</a></li>
+                        <li><a href="">Acoustic Guitars</a></li>
+                        <li><a href="">Left-Handed Guitars</a></li>
+                        <li><a href="">Bass Guitars</a></li>
+                        <li><a href="">Peripherals & Parts</a></li>
+                        <li><a href="">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#friends">OUR FRIENDS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
-           
-            <img scr="SEARCH.svg" alt="search-icon">
-            <a href="#picks"><img scr="PICKS.svg" alt="picks-icon"></a>
-            <a href="/cart-page/tge-cart.html"><img scr="CART.svg" alt="cart-icon"></a>
+            <ul class="icon-trio">
+                <li><img scr="SEARCH.svg" alt="search-icon"></li>
+                <li><a href="#picks"><img scr="PICKS.svg" alt="picks-icon"></a></li>
+                <li></li><a href="/cart-page/tge-cart.html"><img scr="CART.svg" alt="cart-icon"></a></li>
+            </ul>
         </nav>
     </header>
 
