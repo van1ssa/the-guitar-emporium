@@ -2,6 +2,9 @@
     --colour-dark: #474c81;
     --colour-mid: #e14842;
     --colour-light: #f7e3a0;
-    --type-pri: "Woodtype-HTF-gothicextended", sans-serif;
-    --type-sec: "FF Mark", sans-serif;
+
+    /* Headers & Sub-headers - Suisse Int'l Bold*/
+    --type-pri: "suisse_intlbold", sans-serif;
+     /* Paragraphs - Suisse Int'l Reg*/
+    --type-sec: "suisse_intlregular", sans-serif;
 }
