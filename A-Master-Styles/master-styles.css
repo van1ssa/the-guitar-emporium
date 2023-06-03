@@ -5,14 +5,29 @@
 
     /* Headers & Sub-headers - Suisse Int'l Bold*/
     --type-pri: "suisse_intlbold", sans-serif;
+    --type-pri-header: 1rem;
      /* Paragraphs - Suisse Int'l Reg*/
     --type-sec: "suisse_intlregular", sans-serif;
 }
 
 /* Box model fix */
 html{
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 *, *:before, *after{
-    box-sizing:inherit;
+    box-sizing:inherit;}
+
+/* Removes purple text color */
+a:visited{ 
+    color: inherit;
+}
+
+button{
+    background-color: var(--colour-light);
+    color: black;
+    font-family: var(--type-pri);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 1rem 3.3rem;
+    border: none;
+    box-shadow: 0.4rem 0.4rem var(--colour-dark);
 }

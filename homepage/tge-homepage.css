@@ -7,8 +7,9 @@ header{
 }
 .announcement{
     color: white;
-    background-color: var(--colour-mid);
+    background-color: var(--colour-dark);
     font-size: small;
+    height: 2vh;
     padding: 1rem;
     text-align: center;
 }
@@ -25,7 +26,7 @@ header{
 nav ul li{
     display: inline;
 }
-#menu-items li a{
+#menuItems li a{
     position: relative;
     top: -135%;
     padding: 1.53rem;
@@ -49,7 +50,9 @@ nav ul li{
     height: 25px;
     padding: 0.2rem 0.2rem 0rem 0.2rem;
     margin-bottom: 1rem;
-    display: inline-block;
+}
+.icon-trio img:hover{
+    filter: invert(40%) sepia(13%) saturate(5636%) hue-rotate(329deg) brightness(93%) contrast(91%);
 }
 /* .icon-trio li{
     display: inline;
@@ -79,11 +82,30 @@ h2{
     font-family: var(--type-pri);
     text-transform: uppercase;
 }
-h5, p, .shop-items, .menu-items{
-    font-family: var(--type-sec)
+h3{
+    font-family: var(--type-pri);
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem 0.15em black;
 }
+h4{
+    font-family: var(--type-pri);
+    color: var(--colour-light);
+    font-size: large;
+}
+h5, p, .menu-items, .shop-items{
+    font-family: var(--type-sec);
+}
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .newin, .recent{
-    height: 30vh;
+    height: 40vh;
     padding: 1.5rem 7rem;
 }
 .categories{
@@ -122,13 +144,19 @@ img[alt~="misc-icon"]{
 
 section.bio{
     display: flex;
-    justify-content: space-around;
-    padding:5%;
+    align-items: center;
+    padding: 1.5rem 7rem;
     margin-left: 5%;
     margin-right: 5%;
 }
+.bio-image img{
+    width: 90%;
+    margin: 1rem 0rem;
+    box-shadow: 0.8rem 0.8rem white;
+}
 .bio-text{
-    width: 30%;
+    width: 40%;
+    line-height: 120%;
 }
 
 footer{
@@ -144,16 +172,19 @@ footer div{
     width: 20vw;
     padding:4%;
 }
-footer div.up-to-date{
-    width: 35%;
-    padding:4%;
+.up-to-date{
+    width: 36%;
+    display: block;
+    justify-content: center;
+    text-align: center;
 }
 footer div p{
     font-size: 0.6rem;
 }
-.socials-trio li img{
-    /* display: flex; */
-    display: inline;
-    justify-content:space-around;
+.shop-items a{
+    line-height: 150%;
+}
+.socials-trio li{
     width:30px;
+    display: inline-block;
 }
