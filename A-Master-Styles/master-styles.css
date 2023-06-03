@@ -30,4 +30,10 @@ button{
     padding: 1rem 3.3rem;
     border: none;
     box-shadow: 0.4rem 0.4rem var(--colour-dark);
+    transition: 500ms;
+    /* transition-property: all; */
+}
+button:hover{
+    background-color: white;
+    color: var(--colour-dark)
 }

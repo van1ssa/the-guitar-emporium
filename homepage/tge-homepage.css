@@ -41,6 +41,7 @@ nav ul li{
     font-family: var(--type-pri);
     text-transform: uppercase;
     display: inline;
+    transition: 500ms;
 }
 .menu-items a:hover{
     color: var(--colour-light);
