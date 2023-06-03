@@ -1,3 +1,13 @@
+/* import Swiss Int'l Font*/
+
+  :root {
+    --primary-colour: #E14842;
+    --secondary-colour: #F7E3A0;
+    --teritary-colour:#464C7F;
+    --black-colour: #191919;
+    --white-colour: #FFF6D8;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     font-size: 18px;
