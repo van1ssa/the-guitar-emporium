@@ -1,9 +1,7 @@
 :root{
-    --font-pri:var(--font-heading)
-    --font-sec:var(--font-heading)
-
-    --colour-dark:var(--font-primary)
-    --colour-mid:
-    --colour-light:
-
+    --colour-dark: #474c81;
+    --colour-mid: #e14842;
+    --colour-light: #f7e3a0;
+    --type-pri: "Woodtype-HTF-gothicextended", sans-serif;
+    --type-sec: "FF Mark", sans-serif;
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Guitar Emporium, Australia's premier vintage guitar online store!">
+    <meta name="author" content="Darren Garth">
     <link rel="preconnect" href="#font-pri">
     <link rel="preconnect" href="#font-sec">
     <link rel="stylesheet" type="text/css" href="tge-homepage.css">
@@ -11,15 +13,18 @@
     <script src="tge-homepage.js"></script>
 </head>
 
-<body>
-    <header> <!-- Nav Bar -->
-        <nav class="navbar" id="navbar">
-            <ul class="TGE-logo">
-                <li><a href="tge-homepage.html"></a><img src="/assets-imgaes/TGE Logo coloured.svg" 
-                    alt="TGE-logo" class="logo"></n></li>
-            </ul>        
+<body style="background-color: var(--colour-mid);">
+    <header> 
+        <section class="announcement"> <!-- Announcement Banner -->
+            <p>Our brick and mortar store is now closed. Contact us via email for repairs and consignments.</p>
+        </section>
+        
+        <nav class="navbar" id="navbar"> <!-- Nav Bar -->
+            <a href="tge-homepage.html" class="TGE-logo">
+                <img src="assets-elements\TGE Logo coloured.svg" alt="TGE-logo" class="logo" width="150px">
+            </a>
             <ul class="menu-items" id="menu-items">    
-                    <li><a href="#shopall" onmouseover="hoverDropdown()">Shop</a>
+                <li><a href="#shopall" onmouseover="hoverDropdown()">Shop</a>
                     <ul id="shop-dropdown" class="shop-dropdown">
                         <li><a href="">New Arrivals</a></li>
                         <li><a href="">Electric  Guitars</a></li>
@@ -35,17 +40,27 @@
                 <li><a href="#friends">Our Friends</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="icon-trio">
-                <li><img scr="SEARCH.svg" alt="search-icon"></li>
-                <li><a href="#picks"><img scr="PICKS.svg" alt="picks-icon"></a></li>
-                <li></li><a href="/cart-page/tge-cart.html"><img scr="CART.svg" alt="cart-icon"></a></li>
-            </ul>
+            <div class="icon-trio">
+                <img scr="SEARCH.svg" alt="search-icon">
+                <a href="#picks"><img scr="PICKS.svg" alt="picks-icon"></a>
+                <a href="/cart-page/tge-cart.html"><img scr="CART.svg" alt="cart-icon"></a>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section> <!-- Banner Slideshow -->
-            <img src="HERO1.jpg" alt="hero-1" class="hero">
+        <section> <!-- Hero Slideshow -->
+            <ul>
+                <li><img src="homepage-pics\hero1.jpg" alt="hero-1" class="hero" width="100%"></li>
+                <li><img src="homepage-pics\hero2.jpg" alt="hero-2" class="hero" width="100%">
+                    <p>Hey Chief, 
+                    <br>Our phone is on the blink, best to send an email from the contact page. Sorry about that...</p>
+                </li>
+                <li><img src="homepage-pics\hero3.jpg" alt="hero-2" class="hero" width="100%">
+                    <p>New Arrivals Every Week!
+                    <br>Shop now</p>
+                </li>
+            </ul>
         </section>
 
         <section> <!-- New Products -->
@@ -89,10 +104,42 @@
     </main>
 
     <footer> <!-- Footer -->
-        <img src="LOGO.svg" alt="TGE-logo" class="logo">
-        <p>Copyright &copy; 2023 Guitar Emporium</p>
-        <p>Ecommerice Software by Shopify.</p>
-        <p><a href="#privacypolicy">Privacy Policy. </a><a href="#termspolicy">Terms and Policy.</a></p>
+        <div><img src="assets-elements\TGE Logo coloured.svg" alt="TGE-logo" class="logo" width="100px">
+            <p>Copyright &copy; 2023 Guitar Emporium</p>
+            <p>Ecommerice Software by Shopify.</p>
+            <p><a href="#privacypolicy">Privacy Policy. </a><a href="#termspolicy">Terms and Policy.</a></p>
+        </div>
+        <div>
+            <h2>Shop</h2>
+            <ul class="shop-items">
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Electric  Guitars</a></li>
+                <li><a href="">Acoustic Guitars</a></li>
+                <li><a href="">Left-Handed Guitars</a></li>
+                <li><a href="">Bass Guitars</a></li>
+                <li><a href="">Peripherals & Parts</a></li>
+                <li><a href="">Miscellaneous</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2><a href="">About</a></h2>
+            <h2><a href="">Serives</a></h2>
+            <h2><a href="">Our Friends</a></h2>
+            <h2><a href="">Contact</a></h2>
+        </div>
+        <div>
+            <h2>Be the first to hear about new gear</h2>
+            <label for="email">Enter your email.</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="✓">
+
+            <h2>Keep in touch</h2>
+            <ul class="socials-trio">
+                <li><a href="https://www.facebook.com/p/Guitar-Emporium-100057529175827/"><img scr="\assets-elements\icon-facebook.svg" alt="facebook-icon"></a></li>
+                <li><a href="https://www.instagram.com/guitaremporium/"><img scr="\assets-elements\icon-instagram.svg" alt="instagram-icon"></a></li>
+                <li><a href="https://twitter.com/emporiumguitar?lang=en"><img scr="\assets-elements\icon-twitter.svg" alt="twitter-icon"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

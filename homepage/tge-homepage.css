@@ -1,37 +1,56 @@
 @import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
     position: sticky;
-    background-color: pink;
+    background-color: var(--colour-light);
     margin: 0;
+}
+nav li a{
+    color: black;
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+}
+nav li a:hover{
+    color: var(--colour-light);
+    background-color: var(--colour-mid); 
+}
+.menu-items{
+    display: inline-block;
 }
 .shop-dropdown{
     display: none;
 }
-
 .show{
     visibility: visible;
     opacity: 1;
 }
-
-nav li:hover{
-    color: red; 
+.icon-trio{
+    display: inline-block;
 }
 
-.logo{
+/* .logo{
     width: 5em;
-}
+} */
 
 .hamburger{
     display: none;
+}
+
+h2{
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+}
+h5{
+    font-family: var(--type-sec)
 }
 
 footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: lightskyblue;
+    background-color: var(--colour-light);
 }
