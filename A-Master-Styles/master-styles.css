@@ -8,3 +8,11 @@
      /* Paragraphs - Suisse Int'l Reg*/
     --type-sec: "suisse_intlregular", sans-serif;
 }
+
+/* Box model fix */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *after{
+    box-sizing:inherit;
+}

@@ -1,0 +1,13 @@
+@import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
+
+h2{
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+}
+h5{
+    font-family: var(--type-sec)
+}
+p{
+    font-family: var(--type-sec)
+}

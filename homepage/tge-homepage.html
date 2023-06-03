@@ -22,7 +22,7 @@
         
         <nav class="navbar" id="navbar"> <!-- Nav Bar -->
             <a href="tge-homepage.html" class="TGE-logo">
-                <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="150px">
+                <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
             </a>
             <ul class="menu-items" id="menu-items">    
                 <li><a href="#shopall" onmouseover="hoverDropdown()">Shop</a>
@@ -41,13 +41,11 @@
                 <li><a href="#friends">Our Friends</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="icon-trio">
-                <ul>
-                <li><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
-                <li><a href="#picks"><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"></a></li>
-                <li><a href="/cart-page/tge-cart.html"><img src="..\assets-elements\icon-cart.svg" alt="cart-icon"></a></li>
-                </ul>
-            </div>
+            <ul class="icon-trio">
+                <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
+                <li class="icon-each"><a href="#picks"><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"></a></li>
+                <li class="icon-each"><a href="/cart-page/tge-cart.html"><img src="..\assets-elements\icon-cart.svg" alt="cart-icon"></a></li>
+            </ul>
         </nav>
     </header>
 
@@ -64,26 +62,30 @@
             </div>
         </section>
 
-        <section style="background-color: var(--colour-mid);"> <!-- New Products -->
+        <section class="newin" style="background-color: var(--colour-light);"> <!-- New Products -->
             <a href="#New-Arrivals"><img src="..\assets-elements\image-newin.svg" alt="new-in-image" width="25%"></a>
             <article>
                 <figure>
-                <a href="#new1"></a><img scr="N1.png" alt="new1-image">newin1-product</a>
+                <a href="#new1"></a><img src="N1.png" alt="new1-image">newin1-product</a>
                 </figure>
             </article>
         </section>
 
-        <section> <!-- Product Categories -->
-            <img src="..\assets-elements\image-shop-by-cat.svg" alt="shop-by-cat-image" width="25%">
-            <a href="#Electric"><img scr="ELECTRIC.png" alt="electric-icon"></a>
-            <a href="#Acoustic"><img scr="ACOUSTIC.png" alt="acoustic-icon"></a>
-            <a href="#Bass"><img scr="BASS.png" alt="bass-icon"></a>
-            <a href="#Left-Hand"><img scr="LEFT-HAND.png" alt="left-hand-icon"></a>
-            <a href="#Parts"><img scr="PARTS.png" alt="parts-icon"></a>
-            <a href="#Misc"><img scr="MISC.png" alt="misc-icon"></a>
+        <section class="categories"> <!-- Product Categories -->
+            <div>
+                <a href="#Electric"><img src="..\homepage\homepage-pics\thumbnail1-electric.png" alt="electric-icon"></a><br>
+                <a href="#Bass"><img src="..\homepage\homepage-pics\thumnail3-bass.png" alt="bass-icon"></a><br>
+                <a href="#Parts"><img src="..\homepage\homepage-pics\thumbnail5-parts.png" alt="parts-icon"></a>
+            </div>
+            <img src="..\assets-elements\image-shop-by-cat.svg" alt="shop-by-cat-image">
+            <div>
+                <a href="#Acoustic"><img src="..\homepage\homepage-pics\thumbnail2-acoustic.png" alt="acoustic-icon"></a><br>
+                <a href="#Left-Hand"><img class="" src="..\homepage\homepage-pics\thumbnail4-left.png" alt="left-hand-icon"></a><br>
+                <a href="#Misc"><img src="..\homepage\homepage-pics\thumbnail6-misc.png" alt="misc-icon"></a>
+            </div>
         </section>
 
-        <section> <!-- Recent Products -->
+        <section class="recent" style="background-color: var(--colour-light);"> <!-- Recent Products -->
             <img src="..\assets-elements\image-recent.svg" alt="recent-image" width="25%">
             <article>
                 <figure>
@@ -96,11 +98,11 @@
             <div class="bio-image">
                 <img src="..\assets-elements\darren-profile.jpg" alt="darren-profile-shot" width="90%"></div>
             <div class="bio-text">
-                <h2>Hi, I'm Darren</h2>
+                <h2>Hi, I'm Darren</h2><br>
                 <p>I've been the front man of the Guitar Emporium since 1993.  As we turn 30 this year, 
                 I'd like to thank everyone who has supported us in the past, and we hope to keep 
                 bringing you plenty of cool guitars in the near future. Cheers!
-                </p>
+                </p><br>
                 <button><a href="#contact">Say hello</a></button></div>
         </section>
 
@@ -108,13 +110,13 @@
 
     <footer> <!-- Footer -->
         <div class="copyright">
-            <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="100px">
+            <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="100px"><br><br><br><br><br>
             <p>Copyright &copy; 2023 Guitar Emporium</p>
             <p>Ecommerice Software by Shopify.</p>
             <p><a href="#privacypolicy">Privacy Policy. </a><a href="#termspolicy">Terms and Policy.</a></p>
         </div>
         <div class="menu-shop">
-            <h2>Shop</h2>
+            <h2>Shop</h2><br>
             <ul class="shop-items">
                 <li><a href="">New Arrivals</a></li>
                 <li><a href="">Electric  Guitars</a></li>
@@ -126,18 +128,18 @@
             </ul>
         </div>
         <div class="menu-remainder">
-            <h2><a href="">About</a></h2>
-            <h2><a href="">Serives</a></h2>
-            <h2><a href="">Our Friends</a></h2>
+            <h2><a href="">About</a></h2><br>
+            <h2><a href="">Serives</a></h2><br>
+            <h2><a href="">Our Friends</a></h2><br>
             <h2><a href="">Contact</a></h2>
         </div>
         <div class="up-to-date">
-            <h2>Be the first to hear about new gear</h2>
+            <h2>Be the first to hear about new gear</h2><br>
             <label for="email">Enter your email.</label>
             <input type="email" id="email" name="email">
             <input type="submit" value="✓">
 
-            <h2>Keep in touch</h2>
+            <br><br><h2>Keep in touch</h2><br>
             <ul class="socials-trio">
                 <li><a href="https://www.facebook.com/p/Guitar-Emporium-100057529175827/">
                     <img class="socials" src="..\assets-elements\icon-facebook.svg" alt="facebook-icon"></a></li>

@@ -1,26 +1,62 @@
 @import url(/A-Master-Styles/reset-styling.css);
 @import url(/A-Master-Styles/master-styles.css);
 
+header{
+    position: sticky;
+    top: -45px;
+}
+.announcement{
+    color: white;
+    background-color: var(--colour-mid);
+    font-size: small;
+    padding: 1rem;
+    text-align: center;
+}
 .navbar{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding: 1rem;
-    position: sticky;
+    padding: 1.5rem 7rem 0rem 7rem;
+    position: relative;
+    align-items: baseline;
+    /* position: sticky; */
     background-color: var(--colour-light);
-    margin: 0;
 }
-nav li a{
+nav ul li{
+    display: inline;
+}
+#menu-items li a{
+    position: relative;
+    top: -135%;
+    padding: 1.53rem;
+}
+.menu-items{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-items a, .menu-remainder a{
     color: black;
     font-family: var(--type-pri);
     text-transform: uppercase;
-    display: inline
+    display: inline;
 }
-nav li a:hover{
+.menu-items a:hover{
     color: var(--colour-light);
     background-color: var(--colour-mid); 
 }
-ul li{
+.icon-trio img{
+    height: 25px;
+    padding: 0.2rem 0.2rem 0rem 0.2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+/* .icon-trio li{
     display: inline;
+} */
+.nav-each{
+    width: 30px;
+    /* grid-column: span 1; */
 }
 .shop-dropdown{
     display: none;
@@ -43,12 +79,46 @@ h2{
     font-family: var(--type-pri);
     text-transform: uppercase;
 }
-h5{
+h5, p, .shop-items, .menu-items{
     font-family: var(--type-sec)
 }
-p{
-    font-family: var(--type-sec)
+.newin, .recent{
+    height: 30vh;
+    padding: 1.5rem 7rem;
 }
+.categories{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 3rem;
+    position: relative;
+}
+.categories img{
+    width: 16vw;
+    /* background-color: aqua; */
+    justify-content: center;
+    position: relative;
+}
+img[alt~="shop-by-cat-image"] {
+    width: 25vw;
+}
+img[alt~="electric-icon"]{
+    left: 85%; top: 8%;
+    transform: rotate(32deg);}
+img[alt~="acoustic-icon"]{
+    left: -90%; top: 10%;
+    transform: rotate(-15deg);}
+img[alt~="bass-icon"]{
+    bottom: 7%; left: 15%;
+    transform: rotate(-25deg);}
+img[alt~="left-hand-icon"]{
+    left: -20%; bottom: 2%;
+    transform: rotate(45deg);}
+img[alt~="parts-icon"]{
+    left: 90%; bottom: 12%;
+    transform: rotate(-50deg);}
+img[alt~="misc-icon"]{
+    left: -77%; bottom: 7%;
+    transform: rotate(20deg);}
 
 section.bio{
     display: flex;
@@ -65,11 +135,25 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--colour-light);
+    padding: 1rem 7rem
+    /* position: relative;
+    justify-content: center; */
 }
 footer div{
-    width: 20%;
-    padding:1%;
+    /* position: relative; */
+    width: 20vw;
+    padding:4%;
 }
-.socials{
+footer div.up-to-date{
+    width: 35%;
+    padding:4%;
+}
+footer div p{
+    font-size: 0.6rem;
+}
+.socials-trio li img{
+    /* display: flex; */
+    display: inline;
+    justify-content:space-around;
     width:30px;
 }
