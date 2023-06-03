@@ -11,8 +11,10 @@
 .shop-dropdown{
     display: none;
 }
-.shop-dropdown-display{
-    display: initial;
+
+.show{
+    visibility: visible;
+    opacity: 1;
 }
 
 nav li:hover{

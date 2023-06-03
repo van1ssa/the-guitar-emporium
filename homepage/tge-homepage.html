@@ -10,16 +10,17 @@
     <title>The Guitar Emporium</title>
     <script src="tge-homepage.js"></script>
 </head>
+
 <body>
-    <header>
+    <header> <!-- Nav Bar -->
         <nav class="navbar" id="navbar">
             <ul class="TGE-logo">
                 <li><a href="tge-homepage.html"></a><img src="/assets-imgaes/TGE Logo coloured.svg" 
                     alt="TGE-logo" class="logo"></n></li>
             </ul>        
             <ul class="menu-items" id="menu-items">    
-                    <li><a href="#shopall">SHOP</a>
-                    <ul class="shop-dropdown" onclick="toggleResponsive()">
+                    <li><a href="#shopall" onmouseover="hoverDropdown()">Shop</a>
+                    <ul id="shop-dropdown" class="shop-dropdown">
                         <li><a href="">New Arrivals</a></li>
                         <li><a href="">Electric  Guitars</a></li>
                         <li><a href="">Acoustic Guitars</a></li>
@@ -29,10 +30,10 @@
                         <li><a href="">Miscellaneous</a></li>
                     </ul>
                 </li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#friends">OUR FRIENDS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#friends">Our Friends</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="icon-trio">
                 <li><img scr="SEARCH.svg" alt="search-icon"></li>
@@ -43,25 +44,55 @@
     </header>
 
     <main>
-        <img src="HERO1.jpg" alt="hero-1" class="hero">
-        
-        <section>
-        <article>
-            <h2>New In</h2>
-            <figure>
-                <a href="#newin1"></a><img scr="">newin1-product</a>
-            </figure>
-        </article>
-    </section>
+        <section> <!-- Banner Slideshow -->
+            <img src="HERO1.jpg" alt="hero-1" class="hero">
+        </section>
+
+        <section> <!-- New Products -->
+            <a href="#New-Arrivals"><img scr="NEW-IN.png" alt="new-in-icon"></a>
+            <article>
+                <figure>
+                <a href="#new1"></a><img scr="N1.png" alt="new1-image">newin1-product</a>
+                </figure>
+            </article>
+        </section>
+
+        <section> <!-- Product Categories -->
+            <img scr="SHOPBYCAT.png" alt="shopbycat-icon">
+            <a href="#Electric"><img scr="ELECTRIC.png" alt="electric-icon"></a>
+            <a href="#Acoustic"><img scr="ACOUSTIC.png" alt="acoustic-icon"></a>
+            <a href="#Bass"><img scr="BASS.png" alt="bass-icon"></a>
+            <a href="#Left-Hand"><img scr="LEFT-HAND.png" alt="left-hand-icon"></a>
+            <a href="#Parts"><img scr="PARTS.png" alt="parts-icon"></a>
+            <a href="#Misc"><img scr="MISC.png" alt="misc-icon"></a>
+        </section>
+
+        <section> <!-- Recent Products -->
+            <img scr="RECENT.png" alt="recent-icon">
+            <article>
+                <figure>
+                <a href="#recent1"></a><img scr="R1.png" alt="recent1-image">newin1-product</a>
+                </figure>
+            </article>
+        </section>
+
+        <section> <!-- Darren's Bio -->
+            <img scr="darren-profile.jpg" alt="darren-profile-shot">
+            <h2>Hi, I'm Darren</h2>
+            <p>I've been the front man of the Guitar Emporium since 1993.  As we turn 30 this year, 
+                I'd like to thank everyone who has supported us in the past, and we hope to keep 
+                bringing you plenty of cool guitars in the near future. Cheers!
+            </p>
+            <button><a href="#contact">Say hello</a></button>
+        </section>
 
     </main>
 
-    <footer>
+    <footer> <!-- Footer -->
         <img src="LOGO.svg" alt="TGE-logo" class="logo">
         <p>Copyright &copy; 2023 Guitar Emporium</p>
         <p>Ecommerice Software by Shopify.</p>
         <p><a href="#privacypolicy">Privacy Policy. </a><a href="#termspolicy">Terms and Policy.</a></p>
     </footer>
-
 </body>
 </html>

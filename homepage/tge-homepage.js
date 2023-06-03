@@ -1,10 +1,5 @@
-// function toggleResponsive(){
-//     var nav = document.getElementById("shop-dropdown")
-//     nav.classList.toggle("shop-dropdown-display")
-// }
-
-function toggleResponsive(){
-    var nav = document.getElementById("shop-dropdown")
-    nav.className="shop-dropdown-display"
-    console.log(working)
+function hoverDropdown(){
+    console.log("working") 
+    var nav = document.querySelector("shop-dropdown")
+    nav.classList.toggle("show")
 }
