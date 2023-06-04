@@ -1,160 +1,38 @@
 @import url(/A-Master-Styles/reset-styling.css);
 @import url(/A-Master-Styles/master-styles.css);
 
-header{
-    position: sticky;
-    top: -45px;
-}
-.announcement{
-    height: 1.5vh;
-    color: white;
-    background-color: var(--colour-dark);
-    font-size: small;
-    padding: 1rem;
-    text-align: center;
-}
-.nav-bar{
-    height: 14.3vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1.5rem 7rem 0rem 7rem;
-    position: relative;
-    align-items: baseline;
-    background-color: var(--colour-light);
-}
-.TGE-logo{
-    width: 20%;
-    text-align: center;
-}
-.item{
-    position: relative;
-    top: -135%;
-    padding: 4vh;
-}
-.menu-items{
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.menu-items a, .menu-remainder a{
-    color: black;
-    font-family: var(--type-pri);
-    text-transform: uppercase;
-    display: inline;
-    transition: 500ms;
-}
-.menu-items a:hover{
-    color: var(--colour-light);
-    background-color: var(--colour-mid); 
-}
-.shop-all{
-    position: relative;
-    display: inline-block;
-}
-.shop-dropdown{
-    display: none;
-    position: absolute;
-    color: white;
-    font-family: var(--type-sec);
-    text-transform: uppercase;
-    line-height: 150%;
-    width: 20vw;
-    background-color: var(--colour-mid);
-    padding: 1rem;
-}
-.shop-dropdown a{
-    font-family: var(--type-sec);
-    color: white;
-    line-height: 200%;
-}
-#shopDropdown li a:hover{
-    color: var(--colour-light);
-    padding: 0;
-}
-.shop-all:hover .shop-dropdown {display:block;}
-
-.icon-trio{
-    width: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.icon-trio img{
-    height: 25px;
-    margin-bottom: 1rem;
-}
-.icon-trio img:hover{
-    filter: invert(40%) sepia(13%) saturate(5636%) hue-rotate(329deg) brightness(93%) contrast(91%);
-    transition: 500ms;
-}
-
-/* #hide{
-    display: none;
-}
-#show{
-    visibility: visible;
-    opacity: 1;
-} */
 /* .hamburger{
     display: none;
 } */
 
-h2{
-    font-family: var(--type-pri);
-    text-transform: uppercase;}
-h3{ 
-    font-family: var(--type-pri);
-    color: white;
-    font-size: large;
-    text-transform: uppercase;
-    text-shadow: 0.1rem 0.1rem 0.15em black;}
-h4{
-    font-family: var(--type-pri);
-    color: var(--colour-light);
-    font-size: large;
-}
-h5, p, .menu-items, .shop-items{
-    font-family: var(--type-sec);
-}
 /* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO */
 .slideshow{
     height: 100%;
     width: 100%;
-    /* position: relative; */
     display: flex;
     flex-direction: row;
-    overflow-y: hidden;
+    animation: slide-hori 10s infinite;
 }
 .slide-1 img, .slide-2 img, .slide-3 img{
     width: 100vw;
 }
-/* @keyframes slide-1{
-    transform: translateY(-50%)
-    transition: all 150ms ease; 
-} */
-/* .slide-2{
-    animation: slide2Anim 15s infinite;
-    transform:
+@keyframes slide-hori{
+    from{
+        transform: translateX(0);}
+    50%{
+        transform: translateX(-100%);}
+    75%{
+        transform: translateX(-200%);}
+    to{
+        transform: translateX(0);}
 }
-.slide-3{
-    animation: slide3Anim 15s infinite;
-}
-@keyframes slide3Anim {
-    0%{opacity:0;}
-    50%{opacity:0;}
-    67%{opacity:1;}
-    83%{opacity:1;}
-    100%{opacity:0;}
-} */
+
 /* NEW & RECENT *//* NEW & RECENT *//* NEW & RECENT *//* NEW & RECENT *//* NEW & RECENT */
 img[alt~="new-in-image"]{
-    width: 45vh;
+    width: 43vh;
 }
 img[alt~="recent-image"]{
-    width: 35vh;
+    width: 33vh;
 }
 .newin, .recent{
     display: flex;
@@ -163,9 +41,10 @@ img[alt~="recent-image"]{
 }
 .newin div, .recent div{
     flex: 1;
-    height: 40vh;
-    text-align: center;
-    background-color: aqua;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .newin ul, .recent ul{
     flex: 3;
@@ -181,22 +60,27 @@ img[alt~="recent-image"]{
 .recent{padding: 1.5rem 7rem 1.5rem 0rem;}
 span{
     flex: 3;
-    display: none;
-}
+    display: none;}
 
+figure{
+    position: relative;
+}    
 figure img{
-    width: 30vw;
-}
+    width: 30vw;}
 figcaption{
     font-family: var(--type-pri);
     font-size: small;
     color: white;
     text-transform: uppercase;
+    text-align: right;
     line-height: 1.4rem;
-}
+    width: 50%;
+    position: absolute;
+    bottom: 19%;
+    left:41%;
+}    
 figcaption h4{
-    color: var(--colour-mid)
-}
+    color: var(--colour-light)}
 
 /* CATEGORIES *//* CATEGORIES *//* CATEGORIES *//* CATEGORIES *//* CATEGORIES *//* CATEGORIES */
 .categories{
@@ -206,29 +90,28 @@ figcaption h4{
 .categories img{
     width: 16vw;
     position: relative;
-    z-index: -1;
 }
 img[alt~="shop-by-cat-image"] {
     width: 25vw;
     /* background-color: aqua; */
 }
 img[alt~="electric-icon"]{
-    left: 65%; top: 5%;
+    left: 30%; top: 12%;
     transform: rotate(32deg);}
 img[alt~="acoustic-icon"]{
-    left: -60%; top: 10%;
+    left: -30%; top: 15%;
     transform: rotate(-15deg);}
 img[alt~="bass-icon"]{
-    bottom: 7%; left: -15%;
+    bottom: 5%; left: -35%;
     transform: rotate(-25deg);}
 img[alt~="left-hand-icon"]{
-    left: 20%; bottom: 2%;
+    left: 20%; bottom: -4%;
     transform: rotate(45deg);}
 img[alt~="parts-icon"]{
-    left: 60%; bottom: 10%;
+    left: 40%; bottom: 12%;
     transform: rotate(-50deg);}
 img[alt~="misc-icon"]{
-    left: -42%; bottom: 5%;
+    left: -50%; bottom: 3%;
     transform: rotate(25deg);}
 /* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO */
 section.bio{
@@ -244,36 +127,8 @@ section.bio{
     box-shadow: 0.8rem 0.8rem white;
 }
 .bio-text{
-    width: 40%;
-    line-height: 120%;
-}
-/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
-footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--colour-light);
-    padding: 1rem 7rem;
-    /* position: relative;
-    justify-content: center; */
-}
-footer div{
-    position: relative;
-    width: 20vw;
-    padding:4%;
-}
-.up-to-date{
-    width: 36%;
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
-footer div p{
-    font-size: 0.6rem;
-}
-.shop-items a{
-    line-height: 150%;
-}
-.socials-trio li{
-    width:30px;
-    display: inline-block;
+    width: 45%;
+    line-height: 130%;
+    color: white;
+    font-size: 0.9rem;
 }
