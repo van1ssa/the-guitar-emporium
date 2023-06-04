@@ -6,34 +6,37 @@ header{
     top: -45px;
 }
 .announcement{
+    height: 1.5vh;
     color: white;
     background-color: var(--colour-dark);
     font-size: small;
-    height: 2vh;
     padding: 1rem;
     text-align: center;
 }
-.navbar{
+.nav-bar{
+    height: 14.3vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding: 1.5rem 7rem 0rem 7rem;
     position: relative;
     align-items: baseline;
-    /* position: sticky; */
     background-color: var(--colour-light);
 }
-nav ul li{
-    display: inline;
+.TGE-logo{
+    width: 20%;
+    text-align: center;
 }
-#menuItems li a{
+.item{
     position: relative;
     top: -135%;
-    padding: 1.53rem;
+    padding: 4vh;
 }
 .menu-items{
     width: 60%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .menu-items a, .menu-remainder a{
@@ -47,49 +50,67 @@ nav ul li{
     color: var(--colour-light);
     background-color: var(--colour-mid); 
 }
+.shop-all{
+    position: relative;
+    display: inline-block;
+}
+.shop-dropdown{
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: var(--type-sec);
+    text-transform: uppercase;
+    line-height: 150%;
+    width: 20vw;
+    background-color: var(--colour-mid);
+    padding: 1rem;
+}
+.shop-dropdown a{
+    font-family: var(--type-sec);
+    color: white;
+    line-height: 200%;
+}
+#shopDropdown li a:hover{
+    color: var(--colour-light);
+    padding: 0;
+}
+.shop-all:hover .shop-dropdown {display:block;}
+
+.icon-trio{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .icon-trio img{
     height: 25px;
-    padding: 0.2rem 0.2rem 0rem 0.2rem;
     margin-bottom: 1rem;
 }
 .icon-trio img:hover{
     filter: invert(40%) sepia(13%) saturate(5636%) hue-rotate(329deg) brightness(93%) contrast(91%);
+    transition: 500ms;
 }
-/* .icon-trio li{
-    display: inline;
-} */
-.nav-each{
-    width: 30px;
-    /* grid-column: span 1; */
-}
-.shop-dropdown{
+
+/* #hide{
     display: none;
 }
-.show{
+#show{
     visibility: visible;
     opacity: 1;
-}
-/* .icon-trio{
-    display: inline; */
-
-/* .logo{
-    width: 5em; */
-
-.hamburger{
+} */
+/* .hamburger{
     display: none;
-}
+} */
 
 h2{
     font-family: var(--type-pri);
-    text-transform: uppercase;
-}
-h3{
+    text-transform: uppercase;}
+h3{ 
     font-family: var(--type-pri);
     color: white;
     font-size: large;
     text-transform: uppercase;
-    text-shadow: 0.1rem 0.1rem 0.15em black;
-}
+    text-shadow: 0.1rem 0.1rem 0.15em black;}
 h4{
     font-family: var(--type-pri);
     color: var(--colour-light);
@@ -98,51 +119,118 @@ h4{
 h5, p, .menu-items, .shop-items{
     font-family: var(--type-sec);
 }
-.centered {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO */
+.slideshow{
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+.slide-1 img, .slide-2 img, .slide-3 img{
+    width: 100vw;
+}
+/* @keyframes slide-1{
+    transform: translateY(-50%)
+    transition: all 150ms ease; 
+} */
+/* .slide-2{
+    animation: slide2Anim 15s infinite;
+    transform:
+}
+.slide-3{
+    animation: slide3Anim 15s infinite;
+}
+@keyframes slide3Anim {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    67%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
+} */
+/* NEW & RECENT *//* NEW & RECENT *//* NEW & RECENT *//* NEW & RECENT *//* NEW & RECENT */
+img[alt~="new-in-image"]{
+    width: 45vh;
+}
+img[alt~="recent-image"]{
+    width: 35vh;
+}
+.newin, .recent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.newin div, .recent div{
+    flex: 1;
+    height: 40vh;
+    text-align: center;
+    background-color: aqua;
+}
+.newin ul, .recent ul{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+.newin ul li, .recent li{
+    display: inline-block;
+    padding: 1rem 0rem 1rem 2.5rem;
+}
+.newin, .recent{padding: 1.5rem 0rem 1.5rem 7rem;}
+.recent{padding: 1.5rem 7rem 1.5rem 0rem;}
+span{
+    flex: 3;
+    display: none;
 }
 
-.newin, .recent{
-    height: 40vh;
-    padding: 1.5rem 7rem;
+figure img{
+    width: 30vw;
 }
+figcaption{
+    font-family: var(--type-pri);
+    font-size: small;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+}
+figcaption h4{
+    color: var(--colour-mid)
+}
+
+/* CATEGORIES *//* CATEGORIES *//* CATEGORIES *//* CATEGORIES *//* CATEGORIES *//* CATEGORIES */
 .categories{
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 3rem;
-    position: relative;
+    justify-content: center;
 }
 .categories img{
     width: 16vw;
-    /* background-color: aqua; */
-    justify-content: center;
     position: relative;
+    z-index: -1;
 }
 img[alt~="shop-by-cat-image"] {
     width: 25vw;
+    /* background-color: aqua; */
 }
 img[alt~="electric-icon"]{
-    left: 85%; top: 8%;
+    left: 65%; top: 5%;
     transform: rotate(32deg);}
 img[alt~="acoustic-icon"]{
-    left: -90%; top: 10%;
+    left: -60%; top: 10%;
     transform: rotate(-15deg);}
 img[alt~="bass-icon"]{
-    bottom: 7%; left: 15%;
+    bottom: 7%; left: -15%;
     transform: rotate(-25deg);}
 img[alt~="left-hand-icon"]{
-    left: -20%; bottom: 2%;
+    left: 20%; bottom: 2%;
     transform: rotate(45deg);}
 img[alt~="parts-icon"]{
-    left: 90%; bottom: 12%;
+    left: 60%; bottom: 10%;
     transform: rotate(-50deg);}
 img[alt~="misc-icon"]{
-    left: -77%; bottom: 7%;
-    transform: rotate(20deg);}
-
+    left: -42%; bottom: 5%;
+    transform: rotate(25deg);}
+/* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO *//* BIO */
 section.bio{
     display: flex;
     align-items: center;
@@ -159,17 +247,17 @@ section.bio{
     width: 40%;
     line-height: 120%;
 }
-
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 footer{
     display: flex;
     justify-content: space-between;
     background-color: var(--colour-light);
-    padding: 1rem 7rem
+    padding: 1rem 7rem;
     /* position: relative;
     justify-content: center; */
 }
 footer div{
-    /* position: relative; */
+    position: relative;
     width: 20vw;
     padding:4%;
 }

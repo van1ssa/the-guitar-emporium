@@ -16,7 +16,37 @@
 <body style="background-color: var(--colour-mid);">
 </main>
     <header> <!-- Nav Bar -->
-
+        <section class="announcement"> <!-- Announcement Banner -->
+            <p>Our brick and mortar store is now closed. Contact us via email for repairs and consignments.</p>
+        </section>
+        
+        <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
+            <a href="tge-homepage.html" class="TGE-logo">
+                <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
+            </a>
+            <ul class="menu-items" id="menuItems">    
+                <li class="shop-all"><a class="item" href="#shopall" onmouseover="hoverDropdown()">Shop</a>
+                    <ul id="hide" class="shop-dropdown" id="shopDropdown">
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Electric  Guitars</a></li>
+                        <li><a href="">Acoustic Guitars</a></li>
+                        <li><a  href="">Left-Handed Guitars</a></li>
+                        <li><a href="">Bass Guitars</a></li>
+                        <li><a href="">Peripherals & Parts</a></li>
+                        <li><a href="">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#services">Services</a></li>
+                <li><a class="item" href="#friends">Our Friends</a></li>
+                <li><a class="item" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="icon-trio">
+                <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
+                <li class="icon-each"><a href="#picks"><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"></a></li>
+                <li class="icon-each"><a href="/cart-page/tge-cart.html"><img src="..\assets-elements\icon-cart.svg" alt="cart-icon"></a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="sub-header">
