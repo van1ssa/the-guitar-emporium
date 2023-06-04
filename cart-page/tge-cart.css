@@ -11,3 +11,94 @@ h5{
 p{
     font-family: var(--type-sec)
 }
+
+header{
+    position: sticky;
+    top: -45px;
+}
+.announcement{
+    height: 1.5vh;
+    color: white;
+    background-color: var(--colour-dark);
+    font-size: small;
+    padding: 1rem;
+    text-align: center;
+}
+.nav-bar{
+    height: 14.3vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem 7rem 0rem 7rem;
+    position: relative;
+    align-items: baseline;
+    background-color: var(--colour-light);
+}
+.TGE-logo{
+    width: 20%;
+    text-align: center;
+}
+.item{
+    position: relative;
+    top: -135%;
+    padding: 4vh;
+}
+.menu-items{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-items a, .menu-remainder a{
+    color: black;
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+    display: inline;
+    transition: 500ms;
+}
+.menu-items a:hover{
+    color: var(--colour-light);
+    background-color: var(--colour-mid); 
+}
+.shop-all{
+    position: relative;
+    display: inline-block;
+}
+.shop-dropdown{
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: var(--type-sec);
+    text-transform: uppercase;
+    line-height: 150%;
+    width: 20vw;
+    background-color: var(--colour-mid);
+    padding: 1rem;
+}
+.shop-dropdown a{
+    font-family: var(--type-sec);
+    color: white;
+    line-height: 200%;
+    text-transform: uppercase;
+}
+#shopDropdown li a:hover{
+    color: var(--colour-light);
+    padding: 0;
+}
+.shop-all:hover .shop-dropdown {display: block;}
+
+.icon-trio{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.icon-trio img{
+    height: 25px;
+    margin-bottom: 1rem;
+}
+.icon-trio img:hover{
+    filter: invert(40%) sepia(13%) saturate(5636%) hue-rotate(329deg) brightness(93%) contrast(91%);
+    transition: 500ms;
+}

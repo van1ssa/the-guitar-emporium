@@ -14,32 +14,32 @@
     <script src="tge-homepage.js"></script>
 </head>
 
-<body style="background-color: var(--colour-mid);">
+<body style="background-color: var(--colour-mid);" height="100%">
     <header> 
         <section class="announcement"> <!-- Announcement Banner -->
             <p>Our brick and mortar store is now closed. Contact us via email for repairs and consignments.</p>
         </section>
         
-        <nav class="navbar" id="navBar"> <!-- Nav Bar -->
+        <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
             <a href="tge-homepage.html" class="TGE-logo">
                 <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
             </a>
             <ul class="menu-items" id="menuItems">    
-                <li><a href="#shopall" onmouseover="hoverDropdown()">Shop</a>
-                    <ul id="shopDropdown" class="shop-dropdown">
+                <li class="shop-all"><a class="item" href="#shopall" onmouseover="hoverDropdown()">Shop</a>
+                    <ul id="hide" class="shop-dropdown" id="shopDropdown">
                         <li><a href="">New Arrivals</a></li>
                         <li><a href="">Electric  Guitars</a></li>
-                        <li><a href="">Acoustic Guitars</a></li>
-                        <li><a href="">Left-Handed Guitars</a></li>
+                        <li><a href="tge-list.html">Guitars</a></li>
+                        <li><a  href="">Left-Handed Guitars</a></li>
                         <li><a href="">Bass Guitars</a></li>
                         <li><a href="">Peripherals & Parts</a></li>
                         <li><a href="">Miscellaneous</a></li>
                     </ul>
                 </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#friends">Our Friends</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#services">Services</a></li>
+                <li><a class="item" href="#friends">Our Friends</a></li>
+                <li><a class="item" href="#contact">Contact</a></li>
             </ul>
             <ul class="icon-trio">
                 <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
@@ -50,29 +50,37 @@
     </header>
 
     <main>
-        <section> <!-- Hero Slideshow -->
+        <section width="100%"> <!-- Hero Slideshow -->
             <div class="slideshow">
                 <article class="slide-1" id="slide1">
-                    <img src="homepage-pics\hero1.jpg" alt="hero-1" class="hero" width="100%">
-                    <h3 class="centered">Australia's Premier Vintage Guitar Online Store</h3></article>
+                    <img src="homepage-pics\hero-a.jpg" alt="hero-1" class="hero" width="100%">
+                    <!-- <h3 class="centered">Australia's Premier Vintage Guitar Online Store</h3> -->
+                </article>
                 <article class="slide-2" id="slide2">
-                    <img src="homepage-pics\hero2.jpg" alt="hero-2" class="hero" width="100%">
-                    <h2>Hey Chief, 
-                    <br>Our phone is on the blink, best to send an email from the contact page. Sorry about that...</h2></article>
+                    <img src="homepage-pics\hero-b.jpg" alt="hero-2" class="hero" width="100%">
+                    <!-- <h2>Hey Chief, 
+                    <br>Our phone is on the blink, best to send an email from the contact page. Sorry about that...</h2> -->
+                </article>
                 <article class="slide-3" id="slide3">
-                    <img src="homepage-pics\hero3.jpg" alt="hero-2" class="hero" width="100%">
-                    <h2>New Arrivals Every Week!
-                    <br>Shop now</h2></article>
+                    <img src="homepage-pics\hero-c.jpg" alt="hero-2" class="hero" width="100%">
+                    <!-- <h2>New Arrivals Every Week!
+                    <br>Shop now</h2> -->
+                </article>
             </div>
         </section>
 
-        <section class="newin" style="background-color: var(--colour-light);"> <!-- New Products -->
-            <a href="#New-Arrivals"><img src="..\assets-elements\image-newin.svg" alt="new-in-image" width="25%"></a>
-            <article>
-                <figure>
-                <a href="#new1"></a><img src="N1.png" alt="new1-image">newin1-product</a>
-                </figure>
-            </article>
+        <section class="newin" style="background-color: var(--colour-light);" width="100%"> <!-- New Products -->
+            <div><a href="#New-Arrivals"><img src="..\assets-elements\image-newin.svg" alt="new-in-image"></a></div>
+            <ul>
+                <li><figure>
+                    <a href="tge-page.html"><img src="..\homepage\homepage-pics\N1.png" alt="new1-image">
+                        <figcaption>Beltona <br><h4>Standard Triple Resonator (1994)</h4></figcaption></a>
+                    </figure></li>
+                <li><figure>
+                    <a href="#new2"><img src="..\homepage\homepage-pics\N2.png" alt="new2-image">
+                        <figcaption>Larrivee <br><h4>OM-03-MH (2011)</h4></figcaption></a>
+                    </figure></li>
+            </ul>
         </section>
 
         <section class="categories"> <!-- Product Categories -->
@@ -83,19 +91,28 @@
             </div>
             <img src="..\assets-elements\image-shop-by-cat.svg" alt="shop-by-cat-image">
             <div>
-                <a href="#Acoustic"><img src="..\homepage\homepage-pics\thumbnail2-acoustic.png" alt="acoustic-icon"></a><br>
+                <a href="tge-list.html"><img src="..\homepage\homepage-pics\thumbnail2-acoustic.png" alt="acoustic-icon"></a><br>
                 <a href="#Left-Hand"><img class="" src="..\homepage\homepage-pics\thumbnail4-left.png" alt="left-hand-icon"></a><br>
                 <a href="#Misc"><img src="..\homepage\homepage-pics\thumbnail6-misc.png" alt="misc-icon"></a>
             </div>
         </section>
 
-        <section class="recent" style="background-color: var(--colour-light);"> <!-- Recent Products -->
-            <img src="..\assets-elements\image-recent.svg" alt="recent-image" width="20%">
-            <article>
-                <figure>
-                <a href="#recent1"></a><img scr="R1.png" alt="recent1-image">newin1-product</a>
-                </figure>
-            </article>
+        <section class="recent" style="background-color: var(--colour-light); direction: rtl;" width="100%"> <!-- Recent Products -->
+            <div><img src="..\assets-elements\image-recent.svg" alt="recent-image"></div>
+            <ul>
+                <li><figure>
+                    <a href="#recent1"><img src="..\homepage\homepage-pics\R1.png" alt="recent1-image"></a>
+                    <figcaption>Gibson <br><h4>Tenor Guitar TG-50 (1935)</h4></figcaption></a>
+                    </figure></li>
+                <li><figure>
+                    <a href="#recent1"><img src="..\homepage\homepage-pics\R2.png" alt="recent2-image"></a>
+                    <figcaption>Martinez <br><h4>Babe Traveller</h4></figcaption></a>
+                </figure></li>
+            </ul>
+            <span class="im-feeling-lucky">
+                <p>You have no recently viewed proucts!</p>
+                <button><a href="#randomProductLink">I'm feeling lucky</a></button>
+            </span>
         </section>
 
         <section class="bio"> <!-- Darren's Bio -->
@@ -114,7 +131,8 @@
 
     <footer> <!-- Footer -->
         <div class="copyright">
-            <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="150vw"><br><br><br><br><br>
+            <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="150vw">
+            <br><br><br><br><br><br><br>
             <p>Copyright &copy; 2023 Guitar Emporium</p>
             <p>Ecommerice Software by Shopify.</p>
             <p><a href="#privacypolicy">Privacy Policy. </a><a href="#termspolicy">Terms and Policy.</a></p>
@@ -124,7 +142,7 @@
             <ul class="shop-items">
                 <li><a href="">New Arrivals</a></li>
                 <li><a href="">Electric  Guitars</a></li>
-                <li><a href="">Acoustic Guitars</a></li>
+                <li><a href="tge-list.html">Acoustic Guitars</a></li>
                 <li><a href="">Left-Handed Guitars</a></li>
                 <li><a href="">Bass Guitars</a></li>
                 <li><a href="">Peripherals & Parts</a></li>
