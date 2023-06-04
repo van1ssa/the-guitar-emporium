@@ -6,6 +6,10 @@
   --white-colour: #FFF6D8;
 }
 
+body{
+  overflow-x: ;
+}
+
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
@@ -16,60 +20,110 @@
     left: 0;
     background-color: var(--primary-colour);
     overflow-x: hidden;
-    padding-top: 20px;
     padding-left: 50px;
-  }
-  
-  /* Style the sidenav links and the dropdown button */
-  .sidenav a, .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--secondary-colour);
-    display: block;
-    border: none;
-    background: none;
-    width:100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-  }
+}
 
-  .dropdown-btn{
-    color: var(--black-colour);
-    background-color: var(--secondary-colour);
-  }
-  
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: var(--white-colour);
-  }
-  
-  /* Main content */
-  .main {
-    margin-left: 350px; /* Same as the width of the side.sidesidenav */
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  
-  /* Add an active class to the active dropdown button */
-  .active {
-    background-color: var(--secondary-colour);
-    color: var(--black-colour);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-  }
-  
-  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-  .dropdown-container {
-    display: none;
-    background-color: var(--primary-colour);
-    padding-left: 8px;
-    font-weight: 100;
-  }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
+/*acoustic guitar*/
+.sidenav > #heading {
+  color: white;
+  padding-bottom: 50px;
+}
+
+#heading h1 {
+  font-size: 40px;
+}
+
+/* filter by, sort by*/
+.sidenav > .sidebyside h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--secondary-colour);
+}
+
+.sidenav > .sidebyside > .icon {
+  width: 30px;
+}
+
+.sidenav > .sidebyside {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+/*clear*/
+#clear_btn{
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  border: 2px solid white;
+  border-width: 2px;
+}
+
+#clear_btn:hover{
+  color: var(--primary-colour);
+  background-color: white;
+  text-align: center;
+  margin-top: 5px;
+  border-width: 2px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn, .sorting-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secondary-colour);
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  overflow-x: hidden;
+}
+
+.dropdown-btn{
+  color: var(--black-colour);
+  background-color: var(--secondary-colour);
+  padding: 10px;
+  border: 5px solid var(--primary-colour);
+  border-spacing: 10px;
+  border-width: 5px 0 0 0;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: var(--white-colour);
+}
+
+/* Main content */
+.main {
+  margin-left: 350px; /* Same as the width of the side.sidesidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: var(--secondary-colour);
+  color: var(--black-colour);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: var(--primary-colour);
+  padding-left: 20px;
+  font-weight: 100;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
