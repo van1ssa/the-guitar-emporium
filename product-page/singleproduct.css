@@ -153,7 +153,6 @@ body{
     position: relative;
     bottom: 70px;
     z-index: -1;
-
 }
 
 .trapezoidbtn-left {
@@ -196,7 +195,3 @@ body{
 #table > .details {
     color: var(--secondary-colour);
 }
-
-
-
-
