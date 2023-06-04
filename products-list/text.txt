@@ -1,0 +1,81 @@
+
+
+        <!-- <section id="brandmenu">         
+          <a href="#">Brand:</a>
+            missing : in other filter section, need to add one in the adobexd
+          <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="brand">
+            <li>Beltona</li>
+            <li>Gibson</li>
+            <li>Gretsch</li>
+            <li>Larrivee</li>
+            <li>Martinez</li>
+            <li>Maton</li>
+            <li>Other</li>
+        </ul>
+
+        <section id="bodyshapemenu">
+            <a href="#">Body shape:</a>
+            <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="bodyshape"></ul>
+            <li>Parlor</li>
+            <li>Orchestra Model</li>
+            <li>Dreadnaught</li>
+            <li>Standard</li>
+            
+            <li>OOO</li> 
+            <li>Jumbo</li>
+            <li>Other</li>
+
+        </ul>
+
+        <section id="finishcolourmenu">
+            <a href="#">Finish colour:</a>
+            <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="finishcolour"></ul>
+            <li>Sunburst</li>
+            <li>Black</li>
+            <li>Polyurethane</li>
+            <li>Cherryburst</li>
+            <li>Other</li>
+        </ul>
+
+        <section id="materialmenu">
+            <a href="#">Material:</a>
+            <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="material">
+            <li>Mahogany</li>
+            <li>Maple</li>
+            <li>Basswood</li>
+            <li>Rosewood</li>
+            <li>Metal</li>
+            <li>Other</li>
+        </ul>
+
+        <section id="placeofmanufacturemenu">
+            <a href="#">Place of manufacture:</a>
+            <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="placeofmanufacture">
+            <li>Japan</li>
+            <li>UK</li>
+            <li>USA</li>
+            <li>Australia</li>
+            <li>Other</li>
+        </ul>
+
+        <section id="yearrangemenu">
+            <a href="#">Year range:</a>
+            <img src="/assets-elements/dropdown.png" alt="dropdown">
+        </section>
+        <ul id="yearrange">
+            <li>since 1800s</li>
+            <li>since 1900s</li>
+            <li>since 2000s</li>
+            <li>latest</li>
+            <li>Other</li>
+        </ul> -->

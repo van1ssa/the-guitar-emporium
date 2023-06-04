@@ -1,39 +1,13 @@
-/* import Swiss Int'l Font*/
-
-  :root {
-    --primary-colour: #E14842;
-    --secondary-colour: #F7E3A0;
-    --teritary-colour:#464C7F;
-    --black-colour: #191919;
-    --white-colour: #FFF6D8;
+:root {
+  --primary-colour: #E14842;
+  --secondary-colour: #F7E3A0;
+  --teritary-colour:#464C7F;
+  --black-colour: #191919;
+  --white-colour: #FFF6D8;
 }
 
 body{
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     margin: 2em;
   }
-  
-  nav > ul{
-    display:flex;
-    flex-direction: column; 
-  }
-  
-  li{
-    padding: 0.5em 1em;
-    color: black;
-    background-color: #F7E3A0;
-    transform: translateX(-1em);
-  }
-
-nav ul ul{
-    transform: scale(1,0);
-    transform-origin: top center;
-    transition: 0.2s linear 50ms;
-    position: absolute;
-    top: 100%;
-}
-
-nav li:hover ul{
-    transform: scale(1,1);
-}
