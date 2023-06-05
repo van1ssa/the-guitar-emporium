@@ -13,8 +13,8 @@
     <title>Your Cart</title>
     <script src="tge-cart.js"></script>
 </head>
+
 <body style="background-color: var(--colour-mid);">
-</main>
     <header> <!-- Nav Bar -->
         <section class="announcement"> <!-- Announcement Banner -->
             <p>Our brick and mortar store is now closed. Contact us via email for repairs and consignments.</p>
@@ -48,37 +48,41 @@
             </ul>
         </nav>
     </header>
-
-    <div class="sub-header">
-        <h1 class="heading">Your Cart</h1> <h5 class="cart-clear">Remove all</h5>
-    </div>
-    <br>
+    
+</main>
+    <section class="page-heading">
+        <h3 class="heading">Your Cart</h3> <h5 class="cart-clear">Remove all</h5>
+    </section>
     <section class="cart-box"> <!-- Can contain more than one article -->
         <article class="product-box">
-            <img src="P1.jpg" alt="hero-1" class="hero">
+            <div class="product-image"><a href="..\product-page\tge-page.html"><img src="..\homepage\homepage-pics\N1.png" alt="cart-1"></a> </div>
             
             <div class="product-details">
-                <h5 class="brand">BRAND VAR</h5>
-                <h2 class="title">PRODUCT NAME VAR</h2>
-                <a href="#picks"><img scr="PICKS.svg" alt="picks-icon"></a> <h5>Move to picks</h5>
-            </div>
-            
-            <div class="price">
-                <h3>$1234var</h3>
+                <div class="details-left">
+                    <h3 class="brand">Beltona</h3>
+                    <h2 class="title">Standard Triple Resonator (1994)</h2>
+                    <figure><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"><h5>Move to picks</h5></figure>
+                </div>
+                <div class="details-right">
+                    <h2 class="price">$1234var</h2>
+                </div>
             </div>
         </article>
     </section>
     <br>
-    <section class="subtotal">
-        <h1>SUBTOTAL: $1234</h1> <!-- "Last line justified" -->
-        <button class="cont-shop">Continue shopping</button>
-        <button class="checkout">CHECKOUT</button>
+    <section class="subtotal-box">
+        <div class="subtotal-top">
+            <h3 class="subtotal">SUBTOTAL: $1234</h3> <!-- "Last line justified" -->
+        </div>
+        <div class="subtotal-bot">
+            <button class="cont-shop">Continue shopping</button>
+            <button class="checkout">CHECKOUT</button>
+        </div>
     </section>
-    <br><br><br>
-    <section>
+    <section class="ship-qns">
         <div class="ship-rates">
-            <h2>Shipping Rates</h2>
-            <br>
+            <h4>Shipping Rates</h4>
+            <div class="table-box">
             <table class="domestic">
                 <tr>
                     <td>Australia (large):</td>
@@ -93,7 +97,7 @@
                     <td>$8.95</td>
                 </tr>
             </table>
-            <br>
+            
             <table>
                 <tr>
                     <td>International (large):</td>
@@ -104,19 +108,61 @@
                     <td>$38.95</td>
                 </tr>
             </table>
+            </div>
         </div>
-        <br>
         <div class="questions">
-            <p>Want to learn more or try out gear in person? We'd be  happy to help you out!
+            <h4>Got questions?</h4>
+            <p>Want to learn more or try out gear in person? <br>We'd be  happy to help you out!
                 <br>
-                Shoot us a message <a href="#contact">here</a>.
+                Shoot us a message <a href="#contact"><u>here</u></a>.
             </p>
         </div>
     </section>
 <main>
 
     <footer> <!-- Footer -->
+        <div class="copyright">
+            <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="150vw">
+            <br><br><br><br><br><br><br>
+            <p>Copyright &copy; 2023 Guitar Emporium</p>
+            <p>Ecommerice Software by Shopify.</p>
+            <p><a href="#privacypolicy"><u>Privacy Policy.</u> </a><a href="#termspolicy"><u>Terms and Policy.</u></a></p>
+        </div>
+        <div class="menu-shop">
+            <h2>Shop</h2><br>
+            <ul class="shop-items">
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Electric  Guitars</a></li>
+                <li><a href="tge-list.html">Acoustic Guitars</a></li>
+                <li><a href="">Left-Handed Guitars</a></li>
+                <li><a href="">Bass Guitars</a></li>
+                <li><a href="">Peripherals & Parts</a></li>
+                <li><a href="">Miscellaneous</a></li>
+            </ul>
+        </div>
+        <div class="menu-remainder">
+            <h2><a href="">About</a></h2><br>
+            <h2><a href="">Serives</a></h2><br>
+            <h2><a href="">Our Friends</a></h2><br>
+            <h2><a href="..\contactform\contact.html">Contact</a></h2>
+        </div>
+        <div class="up-to-date">
+            <h1 style="line-height: 140%;">Be the first to hear<br> about new gear</h1><br>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Enter your email.">
+                <input type="submit" value="✓">
+            </div>
 
+            <br><br><h1>Keep in touch</h1><br>
+            <ul class="socials-trio">
+                <li><a href="https://www.facebook.com/p/Guitar-Emporium-100057529175827/">
+                    <img class="socials" src="..\assets-elements\icon-facebook.svg" alt="facebook-icon"></a></li>
+                <li><a href="https://www.instagram.com/guitaremporium/">
+                    <img class="socials" src="..\assets-elements\icon-instagram.svg" alt="instagram-icon"></a></li>
+                <li><a href="https://twitter.com/emporiumguitar?lang=en">
+                    <img class="socials" src="\assets-elements\icon-twitter.svg" alt="twitter-icon"></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

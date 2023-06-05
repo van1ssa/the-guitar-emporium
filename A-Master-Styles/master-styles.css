@@ -5,9 +5,39 @@
 
     /* Headers & Sub-headers - Suisse Int'l Bold*/
     --type-pri: "suisse_intlbold", sans-serif;
-    --type-pri-header: 1rem;
-     /* Paragraphs - Suisse Int'l Reg*/
+     /* Paragraphs & Body- Suisse Int'l Reg*/
     --type-sec: "suisse_intlregular", sans-serif;
+}
+
+/* Uppercase bold black*/
+h1{
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+    color: black;
+}
+/* Uppercase bold red*/
+h2{
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+    color: var(--colour-mid)
+}
+/* Hero text overlay */
+h3{ 
+    font-family: var(--type-pri);
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    /* text-shadow: 0.1rem 0.1rem 0.15em black; */
+}
+/* Lowercase bold */
+h4{
+    font-family: var(--type-pri);
+    color: var(--colour-light);
+    font-size: large;
+}
+/* Regular ie.non-bold */
+h5, p, .menu-items, .shop-items{
+    font-family: var(--type-sec);
 }
 
 /* Box model fix */
@@ -16,9 +46,18 @@ html{
 *, *:before, *after{
     box-sizing:inherit;}
 
-/* Removes purple text color */
+/* Removes purple and blue text color */
 a:visited{ 
-    color: inherit;
+    color: inherit;}
+a {
+    color: inherit;}
+u{
+    text-decoration: underline;}
+
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
 }
 
 button{
@@ -37,3 +76,150 @@ button:hover{
     background-color: white;
     color: var(--colour-dark)
 }
+
+input[type=email]{
+    border: 4px solid var(--colour-dark);
+    padding: 0.7rem 2.5rem;
+    background-color: transparent;
+    text-align: center;
+}
+input[type=submit]{
+    border: none;
+    background-color: var(--colour-dark);
+    color: var(--colour-light);
+    font-size: large;
+    font-weight: bold;
+    padding: 0.4rem 1rem; 
+    cursor: pointer;
+}
+
+/* Header Styling *//* Header Styling *//* Header Styling *//* Header Styling */
+header{
+    position: sticky;
+    top: -45px;
+    z-index: 1;
+}
+.announcement{
+    height: 1.5vh;
+    color: white;
+    background-color: var(--colour-dark);
+    font-size: small;
+    padding: 1rem;
+    text-align: center;
+}
+.nav-bar{
+    height: 14.3vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5rem 7rem 0rem 7rem;
+    position: relative;
+    align-items: baseline;
+    background-color: var(--colour-light);
+}
+.TGE-logo{
+    width: 20%;
+    text-align: center;
+}
+.item{
+    position: relative;
+    top: -135%;
+    padding: 4.1vh 3.9vh;
+}
+.menu-items{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.menu-items a{
+    color: black;
+    font-family: var(--type-pri);
+    text-transform: uppercase;
+    display: inline;
+    transition: 400ms;
+}
+.menu-items a:hover{
+    color: var(--colour-light);
+    background-color: var(--colour-mid); 
+}
+.shop-all{
+    position: relative;
+    display: inline-block;
+}
+.shop-dropdown{
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: var(--type-sec);
+    line-height: 150%;
+    width: 20vw;
+    background-color: var(--colour-mid);
+    padding: 1rem;
+}
+.shop-dropdown a{
+    font-family: var(--type-sec);
+    color: white;
+    text-transform:none;
+    line-height: 200%;
+}
+#shopDropdown li a:hover{
+    color: var(--colour-light);
+    padding: 0;
+}
+.shop-all:hover .shop-dropdown {display:block;}
+.icon-trio{
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.icon-trio img{
+    height: 25px;
+    margin-bottom: 1rem;
+}
+.icon-trio img:hover{
+    filter: invert(40%) sepia(13%) saturate(5636%) hue-rotate(329deg) brightness(93%) contrast(91%);
+    transition: 400ms;
+}
+/* Header Styling *//* Header Styling *//* Header Styling *//* Header Styling */
+
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--colour-light);
+    padding: 3rem 7rem;
+}
+footer div{
+    padding: 0% 3%;
+}
+footer div p{
+    font-size: 0.6rem;
+}
+.shop-items a{
+    line-height: 150%;
+}
+div.menu-remainder{
+    padding-left: 0%;
+}
+.up-to-date{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.input-container{
+    display: flex;
+}
+.socials-trio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-trio li{
+    width:30px;
+    display: inline-block;
+    padding: 0rem 0.3rem;
+}
+/* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
