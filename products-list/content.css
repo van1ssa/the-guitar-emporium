@@ -1,6 +1,14 @@
-#content{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-        "sidenav" "product list";
+/* #body{
+    display: flex;
+    flex-direction: column;
+} */
+
+body{
+    position: relat;
 }
+.testing {
+    margin-left: 300px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 10px 0 0 0;
+    position: absolute;
+  }
