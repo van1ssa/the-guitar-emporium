@@ -10,5 +10,23 @@
 <body>
     <a class="favourite" href="#" onclick="favouriteFunction()" id="favouritePick" value="Open"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
     <a class="favourite" href="#" onclick="favouriteFunction()" id="favouritePick" value="Close"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+    <script>
+     function favouriteFunction() {
+        var btn = document.getElementById("favouritePick");
+        if (btn.value == "Open") {
+            btn.value = "Close";
+            btn.innerHTML = "Close";
+          }
+        else {
+            btn.value = "Open";
+            btn.innerHTML = "Open";
+          }
+
+}
+
+
+      </script>
+
 </body>
+
 </html>

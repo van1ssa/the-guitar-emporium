@@ -35,13 +35,13 @@
     color: white;
     font-family: var(--type-pri);
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 1px;
   }
 
 /* filter by, sort by*/
 .sidenav > .sidebyside h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: var(--type-pri);
     font-weight: 700;
     text-transform: uppercase;
