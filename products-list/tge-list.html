@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tge-list.css">
-    <link rel="stylesheet" href="hover.css">
-    <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="/products-list/products-list-css/tge-list.css">
+    <link rel="stylesheet" href="/products-list/products-list-css/hover.css">
+    <link rel="stylesheet" href="/products-list/products-list-css/product.css">
+    <link rel="stylesheet" href="/products-list/products-list-css/content.css">
+    <link rel="stylesheet" href="/products-list/products-list-css/footer.css">
 
     <link rel="preconnect" href="#font-pri">
     <link rel="preconnect" href="#font-sec">
@@ -17,7 +18,7 @@
     <title>Product List</title>
 </head>
 <body>
-  <header> 
+  <header> <!--content: side nav & product-->
         <section class="announcement"> <!-- Announcement Banner -->
             <p>Our brick and mortar store is now closed. <a href="..\contactform\contact.html"><u>Contact us</u></a> directly for repairs and consignments.</p>
         </section>
@@ -51,7 +52,7 @@
         </nav>
   </header>
 
-  <div class="testing">
+  <div class="testing"> <!--content: product-->
     <div class="main">
       <section class="Group-1">
 
@@ -64,7 +65,7 @@
               <h2>BABE TRAVELLER <br>(USED)</h2>
               <h2 class="price">$150</h2>
             </div>
-          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
@@ -76,7 +77,7 @@
               <h2>TENOR GUITAR TG-50 (c.1935)</h2>
               <h2 class="price">$3,495</h2>
             </div>
-          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
@@ -88,7 +89,7 @@
               <h2>TRIPLE RESONATOR (c.1994)</h2>
               <h2 class="price">$4,995</h2>
             </div>
-          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
@@ -100,8 +101,10 @@
               <h2>SYNCHROMATIC X75F (c.1948)</h2>
               <h2 class="price">$3,995</h2>
             </div>
-          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
-          </div>
+          <a class="favourite" href="#" onclick="favouriteFunction()" id="favouritePick" value="Open"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
+          <a class="favourite" href="#" onclick="favouriteFunction()" id="favouritePick" value="Close"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+  
+        </div>
 
           <div class="product-card">
             <img src="/assets-elements/bluebackground.png" alt="blue" class="product-bg">
@@ -112,7 +115,7 @@
               <h2>OM-03-MH <br>(c.2011)</h2>
               <h2 class="price">$3,995</h2>
             </div>
-          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
@@ -124,7 +127,7 @@
               <h2>EMBW-12 Mini <br>(c.2019)</h2>
               <h2 class="price">$1,750</h2>
             </div>
-          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
+          <a class="favourite" href="#"><img src="/assets-elements/icon-picks-white.svg" alt="favourite"></a>
           </div>
 
 
@@ -134,12 +137,12 @@
 
     <div class="research">
       <p>Showing 1-6 of 30 results</p>
-      <p>&#60; 1 2 3 ... 5 > </p>
+      <p>&#60;&nbsp;<span>1</span>&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;...&nbsp;&nbsp;5&nbsp;&nbsp;> </p>
     </div>
     
   </div>
 
-    <div class="sidenav">
+  <div class="sidenav"> 
       <section id="heading">
         <h1>ACOUSTIC GUITARS</h1>
         <br>
@@ -255,8 +258,52 @@
           <a href="sorting-btn">Latest (Default)</a>
         </div>
 
-    </div>
-       
+  </div>
+
+  <footer> <!-- Footer -->
+      <div class="copyright">
+          <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="150vw">
+          <br><br><br><br><br><br><br>
+          <p>Copyright &copy; 2023 Guitar Emporium</p>
+          <p>Ecommerice Software by Shopify.</p>
+          <p><a href="#privacypolicy"><u>Privacy Policy.</u> </a><a href="#termspolicy"><u>Terms and Policy.</u></a></p>
+      </div>
+      <div class="menu-shop">
+          <h2>Shop</h2><br>
+          <ul class="shop-items">
+              <li><a href="">New Arrivals</a></li>
+              <li><a href="">Electric  Guitars</a></li>
+              <li><a href="tge-list.html">Acoustic Guitars</a></li>
+              <li><a href="">Left-Handed Guitars</a></li>
+              <li><a href="">Bass Guitars</a></li>
+              <li><a href="">Peripherals & Parts</a></li>
+              <li><a href="">Miscellaneous</a></li>
+          </ul>
+      </div>
+      <div class="menu-remainder">
+          <h2><a href="">About</a></h2><br>
+          <h2><a href="">Serives</a></h2><br>
+          <h2><a href="">Our Friends</a></h2><br>
+          <h2><a href="..\contactform\contact.html">Contact</a></h2>
+      </div>
+      <div class="up-to-date">
+          <h1 style="line-height: 140%;">Be the first to hear<br> about new gear</h1><br>
+          <div class="input-container">
+              <input type="email" id="email" name="email" placeholder="Enter your email.">
+              <input type="submit" value="✓">
+          </div>
+
+          <br><br><h1>Keep in touch</h1><br>
+          <ul class="socials-trio">
+              <li><a href="https://www.facebook.com/p/Guitar-Emporium-100057529175827/">
+                  <img class="socials" src="..\assets-elements\icon-facebook.svg" alt="facebook-icon"></a></li>
+              <li><a href="https://www.instagram.com/guitaremporium/">
+                  <img class="socials" src="..\assets-elements\icon-instagram.svg" alt="instagram-icon"></a></li>
+              <li><a href="https://twitter.com/emporiumguitar?lang=en">
+                  <img class="socials" src="\assets-elements\icon-twitter.svg" alt="twitter-icon"></a></li>
+          </ul>
+      </div>
+  </footer>
 
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -274,6 +321,21 @@
             }
           });
         }
+
+        function favouriteFunction() {
+          var btn = document.getElementById("favouritePick");
+          if (btn.value == "Open") {
+              btn.value = "Close";
+              btn.innerHTML = "Close";
+            }
+          else {
+              btn.value = "Open";
+              btn.innerHTML = "Open";
+            }
+
+}
+
+
         </script>
 </body>
 </html>
