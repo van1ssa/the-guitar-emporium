@@ -1,0 +1,30 @@
+#btn-redirect{
+    padding-left: 2em;
+    position: absolute;
+}
+
+
+#btn-redirect > .btn-top-prev{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: red;
+    padding: 30px 30px 10px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+#btn-redirect > .trapebtn{
+    border-bottom: 50px solid rgb(40, 183, 95);
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 180px;
+    transform: scaleY(-1);
+    position: relative;
+    bottom: 48px; 
+    z-index: -1;
+
+}

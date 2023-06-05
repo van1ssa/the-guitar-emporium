@@ -6,11 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="singleproduct.css">
     <link rel="stylesheet" href="mutipleproduct.css">
+
+    <link rel="preconnect" href="#font-pri">
+    <link rel="preconnect" href="#font-sec">
+    <link rel="stylesheet" type="text/css" href="tge-homepage.css">
+    <link rel="stylesheet" href="..\A-Master-Styles\Suisse Intl-webfontkit-20230603-060345\stylesheet.css" type="text/css" charset="utf-8" />
     <title>Single Product</title>
 </head>
 <body>
-    <div id="heading">
-        <a href="#" class="btn-top-prev">PREV</a>
+    <header> 
+        <section class="announcement"> <!-- Announcement Banner -->
+            <p>Our brick and mortar store is now closed. <a href="..\contactform\contact.html"><u>Contact us</u></a> directly for repairs and consignments.</p>
+        </section>
+        
+        <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
+            <a href="tge-homepage.html" class="TGE-logo">
+                <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
+            </a>
+            <ul class="menu-items" id="menuItems">    
+                <li class="shop-all"><a class="item" href="#shopall">Shop</a>
+                    <ul id="hide" class="shop-dropdown" id="shopDropdown">
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Electric  Guitars</a></li>
+                        <li><a href="tge-list.html">Guitars</a></li>
+                        <li><a  href="">Left-Handed Guitars</a></li>
+                        <li><a href="">Bass Guitars</a></li>
+                        <li><a href="">Peripherals & Parts</a></li>
+                        <li><a href="">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#services">Services</a></li>
+                <li><a class="item" href="#friends">Our Friends</a></li>
+                <li><a class="item" href="..\contactform\contact.html">Contact</a></li>
+            </ul>
+            <ul class="icon-trio">
+                <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
+                <li class="icon-each"><a href="#picks"><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"></a></li>
+                <li class="icon-each"><a href="/cart-page/tge-cart.html"><img src="..\assets-elements\icon-cart.svg" alt="cart-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="btn-redirect">
+        <a href="/products-list/tge-list.html" class="btn-top-prev">PREV</a>
         <a class="trapezoidbtn-top-left"></a>
     </div>
 
@@ -27,25 +66,36 @@
                 <img src="/assets-images/Babe_Trav-3.jpg" style="width:100%" class="imgdes">
                 <img src="/assets-images/Babe_Trav-4.jpg" style="width:100%" class="imgdes">
                 <img src="/assets-images/Babe_Trav-5.jpg" style="width:100%" class="imgdes">
-              </div>
+            </div>
+        
     </section> 
     
+    <!--singleproduct.css-->
     <div class="single-pro-details">
             <div class="des">
                 <h4>GIBSON</h4>
-                <h1>TENOR GUITAR TG-50 (c.1935)</h1>
+                <div class="picksection">
+                    <h1>TENOR GUITAR TG-50 <br> (c.1935)</h1>
+                    <a href="#"><img src="/assets-elements/icon-picks-hovered.svg" width="16%" class="favourite" alt="pick"></a>
+                </div>
+                <br>
+                <br>
                 <h1 class="price">$3,495</h1>
-                <a href="#"><img src="/assets-elements/icon-picks-hovered.svg" width="5%" alt="pick" class="favourite"></a>
             </div>
-            
+            <br>
             <div class="btn">
-            <a href="#" class="btn-help">NEED HELP?</a>
+            <a href="#" class="btn-add">NEED HELP?</a>
             <a href="#" class="btn-add">ADD TO CART</a>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>I had a very pleasant surprise picking this one up to have a play. The sound was ultra-pleasing to my ears with a “piano-like” tone that I just didn’t expect from this guitar!  A lovely tight, crisp but full tone emanates out of this old thing and not only that, it’s a joy to play with its very small “V” shape neck and a great set-up too! Within a few minutes I had a fully-written instrumental that reminded me of early Led Zeppelin acoustic stuff!  This guitar took me somewhere else and gave me some unexpected inspiration, it may do the same for you.  Tenor guitars are few and far between it seems so if you’re looking for a cracker, look no further, here it is.  Comes with a hard shell case. </h3>
+            <br>
+            <br>
 
-            <h4>I had a very pleasant surprise picking this one up to have a play. The sound was ultra-pleasing to my ears with a “piano-like” tone that I just didn’t expect from this guitar!  A lovely tight, crisp but full tone emanates out of this old thing and not only that, it’s a joy to play with its very small “V” shape neck and a great set-up too! Within a few minutes I had a fully-written instrumental that reminded me of early Led Zeppelin acoustic stuff!  This guitar took me somewhere else and gave me some unexpected inspiration, it may do the same for you.  Tenor guitars are few and far between it seems so if you’re looking for a cracker, look no further, here it is.  Comes with a hard shell case. </h4>
             <h1>Details</h1>
-
             <section id="table">
                 <div class="title">
                     <p>Year of manufacture:</p>
@@ -68,8 +118,8 @@
             </section>
 
             <div class="btn">
-                <a href="#" class="btn-prev">PREV</a>
-                <a href="#" class="btn-next">NEXT</a>
+                <a href="/products-list/tge-list.html" class="btn-direct">PREV</a>
+                <a href="/products-list/tge-list.html" class="btn-direct">NEXT</a>
             </div>
 
             <div class="trapebtn">
@@ -78,5 +128,24 @@
             </div>
         </div>
 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+  
 </body>
 </html>
