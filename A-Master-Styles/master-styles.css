@@ -77,9 +77,10 @@ button:hover{
     color: var(--colour-dark)
 }
 
-input[type=email]{
+input[type=email], [type=tel], [type=text], textarea{
     border: 4px solid var(--colour-dark);
-    padding: 0.7rem 2.5rem;
+    font-family: var(--type-sec);
+    padding: 0.5rem 1rem;
     background-color: transparent;
     text-align: center;
 }
@@ -205,12 +206,21 @@ div.menu-remainder{
     padding-left: 0%;
 }
 .up-to-date{
+    width:auto;
     display: block;
     justify-content: center;
     text-align: center;
 }
 .input-container{
     display: flex;
+    justify-content: center;
+}
+.up-to-date input[type=email]{
+    width: 18vw;
+}
+footer ::placeholder{
+    color:black;
+    opacity: 0.5;
 }
 .socials-trio{
     display: flex;

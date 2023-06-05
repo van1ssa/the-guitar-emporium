@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TGE.">
+    <meta name="author" content="Darren Garth">
+    <link rel="preconnect" href="#font-pri">
+    <link rel="preconnect" href="#font-sec">
+    <link rel="stylesheet" href="..\A-Master-Styles\Suisse Intl-webfontkit-20230603-060345\stylesheet.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="contact.css">
     <title>Contact Form</title>
 </head>
@@ -14,10 +19,10 @@
         </section>
         
         <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
-            <a href="tge-homepage.html" class="TGE-logo">
+            <a href="..\homepage\tge-homepage.html" class="TGE-logo">
                 <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
             </a>
-            <ul class="menu-items" id="menuItems">    
+            <ul class="menu-items" id="menuItems">
                 <li class="shop-all"><a class="item" href="#shopall">Shop</a>
                     <ul id="hide" class="shop-dropdown" id="shopDropdown">
                         <li><a href="">New Arrivals</a></li>
@@ -48,22 +53,27 @@
     </section>
     <section>
     <form action="after.html">
-        <label for="name">Your name:</label>
-        <input type="text" id="name" name="name" required minlength="2" placeholder="put your name" pattern="[a-z|A-Z| |-]*"
-        oninvalid="this.setCustomValidity('Please enter only letter, space and hyphen')"> <!--can put some default text with placeholder-->
-
-        <label for="tel">Your phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="put your phone number" pattern="[0-9| | ()]*"
-        oninvalid="this.setCustomValidity('Please enter only digits, brackets, hyphne')">
-
-
-        <label for="email">Your email:</label>
-        <input type="email" id="email" name="email">
-
-        <label for="comment">Your thoughtsL:</label>
-        <textarea name="comment" id="comment" cols="30" rows="10">put your comment here</textarea> <!--can put some default text in it-->
-
-        <input type="submit" value="Submit!">
+        <div class="form-left">
+            <div class="wrapper">
+                <label for="name">Your name:</label><br>
+                <input type="text" id="name" name="name" required minlength="2" placeholder="John Smith" pattern="[a-z|A-Z| |-]*"
+                oninvalid="this.setCustomValidity('Please enter only letter, space and hyphen')"> <!--can put some default text with placeholder-->
+            </div>
+            <div class="wrapper">
+                <label for="tel">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="012 345 6789" pattern="[0-9| | ()]*"
+                oninvalid="this.setCustomValidity('Please enter only digits, brackets, hyphne')">
+            </div>
+            <div class="wrapper">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+        </div>
+        <div class="form-right">
+            <label class="msg" for="comment">Your message:</label>
+            <textarea class="msg" name="comment" id="comment" cols="30" rows="10" placeholder="How can we help?"></textarea> <!--can put some default text in it-->
+            <input class="msg" type="submit" value="Submit!">
+        </div>
     </form>
     </section>
 </main>

@@ -4,4 +4,49 @@
 main > section{
     padding: 2rem 9rem 0rem 9rem;
     display: flex;
+    width: auto;
+}
+form{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: left;
+    padding: 0rem 0rem 3rem 0rem;
+}
+label{
+    width:100%;
+
+}
+.form-left{
+    display: inline-block;
+    text-align: left;
+    line-height: 160%;
+}
+.form-right{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    line-height: 160%;
+}
+.wrapper{
+    padding-bottom: 0.5rem;
+}
+label{
+    font-family: var(--type-sec);
+    color: white;
+}
+::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+.form-left input{
+    color: var(--colour-light);
+    width: 110%;
+}
+textarea{
+    text-align: left;
+    padding: 0.7rem 1rem;
+    line-height: 114%;
+    font-family: var(--type-sec);
+    color: var(--colour-light);
 }
