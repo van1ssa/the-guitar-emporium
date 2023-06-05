@@ -94,7 +94,7 @@ input[type=submit]{
     cursor: pointer;
 }
 
-/* Header Styling *//* Header Styling *//* Header Styling *//* Header Styling */
+/* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
 header{
     position: sticky;
     top: -45px;
@@ -111,7 +111,6 @@ header{
 .nav-bar{
     height: 14.3vh;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding: 1.5rem 7rem 0rem 7rem;
@@ -184,8 +183,7 @@ header{
     filter: invert(40%) sepia(13%) saturate(5636%) hue-rotate(329deg) brightness(93%) contrast(91%);
     transition: 400ms;
 }
-/* Header Styling *//* Header Styling *//* Header Styling *//* Header Styling */
-
+/* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER *//* HEADER */
 /* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER *//* FOOTER */
 footer{
     display: flex;
@@ -227,7 +225,7 @@ footer ::placeholder{
     justify-content: center;
     align-items: center;
 }
-.socials-trio li{
+.socials-trio li, .hamburger{
     width:30px;
     display: inline-block;
     padding: 0rem 0.3rem;
