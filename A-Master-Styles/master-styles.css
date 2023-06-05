@@ -54,12 +54,6 @@ a {
 u{
     text-decoration: underline;}
 
-/* .clearfix:after {
-    content:"";
-    display:block;
-    clear:both;
-} */
-
 button{
     background-color: var(--colour-light);
     color: black;
@@ -111,7 +105,6 @@ header{
 .nav-bar{
     height: 14.3vh;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding: 1.5rem 7rem 0rem 7rem;
     position: relative;
@@ -125,7 +118,8 @@ header{
 .item{
     position: relative;
     top: -135%;
-    padding: 4.1vh 3.9vh;
+    padding: 1.5rem 1rem;
+    /* padding: 4.1vh 3.9vh; */
 }
 .menu-items{
     width: 60%;

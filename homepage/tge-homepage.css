@@ -4,9 +4,10 @@
 .hamburger{
     display: none;
     cursor: pointer;
+    padding-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1030px){
+@media only screen and (max-width: 1120px){
     .menu-items{
         display:none;
     }
@@ -108,8 +109,8 @@ figcaption h4{
     position: relative;
 }
 img[alt~="shop-by-cat-image"] {
-    width: 25vw;
-    /* background-color: aqua; */
+    align-self: center;
+    width:20vw;
 }
 img[alt~="electric-icon"]{
     left: 30%; top: 12%;
