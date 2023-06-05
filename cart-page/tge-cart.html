@@ -15,21 +15,21 @@
 </head>
 
 <body style="background-color: var(--colour-mid);">
-    <header> <!-- Nav Bar -->
+    <header> 
         <section class="announcement"> <!-- Announcement Banner -->
-            <p>Our brick and mortar store is now closed. Contact us via email for repairs and consignments.</p>
+            <p>Our brick and mortar store is now closed. <a href="..\contactform\contact.html"><u>Contact us</u></a> directly for repairs and consignments.</p>
         </section>
         
         <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
-            <a href="..\homepage\tge-homepage.html" class="TGE-logo">
+            <a href="tge-homepage.html" class="TGE-logo">
                 <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
             </a>
             <ul class="menu-items" id="menuItems">    
-                <li class="shop-all"><a class="item" href="#shopall" onmouseover="hoverDropdown()">Shop</a>
+                <li class="shop-all"><a class="item" href="#shopall">Shop</a>
                     <ul id="hide" class="shop-dropdown" id="shopDropdown">
                         <li><a href="">New Arrivals</a></li>
                         <li><a href="">Electric  Guitars</a></li>
-                        <li><a href="">Acoustic Guitars</a></li>
+                        <li><a href="tge-list.html">Guitars</a></li>
                         <li><a  href="">Left-Handed Guitars</a></li>
                         <li><a href="">Bass Guitars</a></li>
                         <li><a href="">Peripherals & Parts</a></li>
@@ -39,7 +39,7 @@
                 <li><a class="item" href="#about">About</a></li>
                 <li><a class="item" href="#services">Services</a></li>
                 <li><a class="item" href="#friends">Our Friends</a></li>
-                <li><a class="item" href="#contact">Contact</a></li>
+                <li><a class="item" href="..\contactform\contact.html">Contact</a></li>
             </ul>
             <ul class="icon-trio">
                 <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
@@ -52,7 +52,7 @@
 <main>
     <section class="page-heading" id="discard">
         <h3 class="heading" style="font-size: 1.4rem;">Your Cart</h3>
-        <input type="button" class="cart-clear" value="✖  Remove all" onclick="emptyCart()" id="discard"></input>
+        <input type="button" class="cart-clear" value="✖  Remove all" onclick="emptyCart()"></input>
     </section>
     <section class="cart-box"> <!-- Can contain more than one article -->
         <article class="product-box">

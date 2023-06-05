@@ -1,19 +1,7 @@
-:root{
-    --primary-colour: #E14842;
-    --secondary-colour: #F7E3A0;
-    --teritary-colour: #464C7F;
+@import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
 
-    --black-colour: #191919;
-    --white-colour: #FFF6D8;
-
-    --right-colour: #90EE90;
-    --wrong-colour: #ffb6c1;
-}
-
-input:valid{
-    background-color: var(--right-colour);
-}
-
-input:invalid{
-    background-color: var(--wrong-colour);
+main > section{
+    padding: 2rem 9rem 0rem 9rem;
+    display: flex;
 }
