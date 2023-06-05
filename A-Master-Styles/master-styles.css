@@ -54,11 +54,11 @@ a {
 u{
     text-decoration: underline;}
 
-.clearfix:after {
+/* .clearfix:after {
     content:"";
     display:block;
     clear:both;
-}
+} */
 
 button{
     background-color: var(--colour-light);
@@ -70,7 +70,7 @@ button{
     border: none;
     box-shadow: 0.4rem 0.4rem var(--colour-dark);
     transition: 500ms;
-    /* transition-property: all; */
+    cursor: pointer;
 }
 button:hover{
     background-color: white;

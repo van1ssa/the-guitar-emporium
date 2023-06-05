@@ -7,9 +7,46 @@
     <link rel="stylesheet" href="contact.css">
     <title>Contact Form</title>
 </head>
-<body>
-    <h1>This is the contact form page.</h1>
+<body style="background-color: var(--colour-mid);">
+    <header> 
+        <section class="announcement"> <!-- Announcement Banner -->
+            <p>Our brick and mortar store is now closed. <a href="..\contactform\contact.html"><u>Contact us</u></a> directly for repairs and consignments.</p>
+        </section>
+        
+        <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
+            <a href="tge-homepage.html" class="TGE-logo">
+                <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
+            </a>
+            <ul class="menu-items" id="menuItems">    
+                <li class="shop-all"><a class="item" href="#shopall">Shop</a>
+                    <ul id="hide" class="shop-dropdown" id="shopDropdown">
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Electric  Guitars</a></li>
+                        <li><a href="tge-list.html">Guitars</a></li>
+                        <li><a  href="">Left-Handed Guitars</a></li>
+                        <li><a href="">Bass Guitars</a></li>
+                        <li><a href="">Peripherals & Parts</a></li>
+                        <li><a href="">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#services">Services</a></li>
+                <li><a class="item" href="#friends">Our Friends</a></li>
+                <li><a class="item" href="..\contactform\contact.html">Contact</a></li>
+            </ul>
+            <ul class="icon-trio">
+                <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
+                <li class="icon-each"><a href="#picks"><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"></a></li>
+                <li class="icon-each"><a href="/cart-page/tge-cart.html"><img src="..\assets-elements\icon-cart.svg" alt="cart-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
 
+<main>
+    <section class="page-heading" id="discard">
+        <h3 class="heading" style="font-size: 1.4rem;">Contact Us</h3>
+    </section>
+    <section>
     <form action="after.html">
         <label for="name">Your name:</label>
         <input type="text" id="name" name="name" required minlength="2" placeholder="put your name" pattern="[a-z|A-Z| |-]*"
@@ -28,5 +65,51 @@
 
         <input type="submit" value="Submit!">
     </form>
+    </section>
+</main>
+    <footer> <!-- Footer -->
+        <div class="copyright">
+            <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="150vw">
+            <br><br><br><br><br><br><br>
+            <p>Copyright &copy; 2023 Guitar Emporium</p>
+            <p>Ecommerice Software by Shopify.</p>
+            <p><a href="#privacypolicy"><u>Privacy Policy.</u> </a><a href="#termspolicy"><u>Terms and Policy.</u></a></p>
+        </div>
+        <div class="menu-shop">
+            <h2>Shop</h2><br>
+            <ul class="shop-items">
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Electric  Guitars</a></li>
+                <li><a href="tge-list.html">Acoustic Guitars</a></li>
+                <li><a href="">Left-Handed Guitars</a></li>
+                <li><a href="">Bass Guitars</a></li>
+                <li><a href="">Peripherals & Parts</a></li>
+                <li><a href="">Miscellaneous</a></li>
+            </ul>
+        </div>
+        <div class="menu-remainder">
+            <h2><a href="">About</a></h2><br>
+            <h2><a href="">Serives</a></h2><br>
+            <h2><a href="">Our Friends</a></h2><br>
+            <h2><a href="..\contactform\contact.html">Contact</a></h2>
+        </div>
+        <div class="up-to-date">
+            <h1 style="line-height: 140%;">Be the first to hear<br> about new gear</h1><br>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Enter your email.">
+                <input type="submit" value="✓">
+            </div>
+
+            <br><br><h1>Keep in touch</h1><br>
+            <ul class="socials-trio">
+                <li><a href="https://www.facebook.com/p/Guitar-Emporium-100057529175827/">
+                    <img class="socials" src="..\assets-elements\icon-facebook.svg" alt="facebook-icon"></a></li>
+                <li><a href="https://www.instagram.com/guitaremporium/">
+                    <img class="socials" src="..\assets-elements\icon-instagram.svg" alt="instagram-icon"></a></li>
+                <li><a href="https://twitter.com/emporiumguitar?lang=en">
+                    <img class="socials" src="\assets-elements\icon-twitter.svg" alt="twitter-icon"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
