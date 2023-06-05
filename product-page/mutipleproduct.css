@@ -1,4 +1,7 @@
-:root {
+@import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
+
+/* :root {
     --primary-colour: #E14842;
     --secondary-colour: #F7E3A0;
     --teritary-colour:#464C7F;
@@ -8,7 +11,7 @@
 
   * {
     box-sizing: border-box;
-  }
+  } */
 
 .row {
     display: -ms-flexbox; /* IE10 */

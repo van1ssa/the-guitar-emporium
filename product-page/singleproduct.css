@@ -1,3 +1,6 @@
+@import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
+
 :root {
     --primary-colour: #E14842;
     --secondary-colour: #F7E3A0;
@@ -13,6 +16,7 @@
 body{
     background-color:var(--primary-colour);
     font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
     /*check if it is working*/
 }
 
@@ -27,14 +31,13 @@ body{
 /*make space for the previous button*/
 #empty {
     opacity: 0;
-    z-index: -1;
 }
 
 .single-pro-details {
     width: 45%;
     padding-top: 30px;
     position: absolute;
-    top: 10px;
+    top: 7rem;
     right: 0;
 }
 
@@ -46,56 +49,77 @@ body{
 }
 
 .single-pro-details h1{
-    font-size: 40px;
-    line-height: 15px;
+    font-size: 35px;
+    line-height: 2.2rem;
+    letter-spacing: 1px;
     color: var(--secondary-colour);
     font-weight: bold;
 }
 
-.single-pro-details > .des > .price{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+.single-pro-details > .des{
+    width: 120%;
 }
+
+.single-pro-details > .des > .price{
+    font-family: var(--type-sec);
+    line-height: 1.8rem;
+}
+
+.single-pro-details > .des > .picksection{
+    display: flex;
+    justify-content: space-between;
+    justify-self: top;
+}
+
+.single-pro-details h3{
+    width: 85%;
+    line-height: 1.8rem;
+    font-family: var(--type-sec);
+    text-transform: capitalize;
+}
+
 
 /*font*/
 
 .single-pro-details h4{
     color: white;
     line-height: 30px;
-    font-weight: 300;
-    font-size: 23px;
     width: 90%;
-}
-
-/*favourite*/
-.single-pro-details > .favourite{
-    position: absolute;
+    letter-spacing: .8px;
 }
 
 /*botton*/
 
-#heading{
-    width: 100%;
+#btn-redirect{
+    padding-left: 2em;
+    position: absolute;
+    width: 90%;
+    z-index: 1;
 }
 
-#heading > .btn-top-prev{
+#btn-redirect > .btn-top-prev{
+    font-family: var(--type-sec);
     color: var(--secondary-colour);
     padding-left: 130px;
-    align-items: baseline;
+    padding: 30px 30px 10px 100px;
+    text-align: center;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 100;
-    margin: 1rem;
+    display: flex;
+    margin: 2px 2px;
     cursor: pointer;
 }
 
-#heading > .trapezoidbtn-top-left{
+#btn-redirect > .trapezoidbtn-top-left{
     border-bottom: 50px solid var(--teritary-colour);
     border-left: 50px solid transparent;
     border-right: 0px solid transparent;
     height: 0;
     width: 180px;
-    transform: scaleY(-1);
+    position: relative;
+    left: 100px;
+    bottom: 48px; 
+    z-index: -1;
+
 }
 
 .btn{
@@ -104,42 +128,43 @@ body{
     justify-content: space-between;
 }
 
-.btn > .btn-add, .btn-help {
+.btn > .btn-add {
         border: 5px solid var(--secondary-colour);
         color: var(--secondary-colour);
-        padding: 15px 100px;
+        font-family: var(--type-sec);
+        padding: 20px 70px 13px 70px;
+        line-height: 1em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 20px;
-        font-weight: 700;
         margin: 2px 2px;
         cursor: pointer;
 }
 
-.btn > .btn-add:hover, .btn-help:hover {
+.btn > .btn-add:hover {
     background-color: var(--secondary-colour);
     border: 5px solid var(--secondary-colour);
     color: var(--black-colour);
-    padding: 15px 100px;
+    padding: 20px 70px 13px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    font-weight: 700;
     margin: 2px 2px;
     cursor: pointer;
     box-shadow: 7px 7px var(--teritary-colour);
     transition: .3s;
 }
 
-.btn > .btn-prev, .btn-next {
+.btn > .btn-direct {
     color: var(--secondary-colour);
     padding: 30px 80px;
     text-align: center;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    font-family: var(--type-sec);
     font-size: 20px;
     font-weight: 100;
     margin: 2px 2px;
@@ -184,7 +209,7 @@ body{
     font-size: 20px;
     line-height: 25px;
     text-align: left;
-    padding-left: 50px;
+    padding: 1em 2em 1em;
     width: 90%;
 }
 
@@ -194,4 +219,5 @@ body{
 
 #table > .details {
     color: var(--secondary-colour);
+    padding-left: 2em;
 }

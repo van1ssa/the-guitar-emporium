@@ -7,9 +7,9 @@
 }
 
 body{
-  overflow-x: ;
+  overflow-x: hidden;
 }
-
+  
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
