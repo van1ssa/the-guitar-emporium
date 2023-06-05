@@ -1,9 +1,25 @@
 @import url(/A-Master-Styles/reset-styling.css);
 @import url(/A-Master-Styles/master-styles.css);
 
-/* .hamburger{
+.hamburger{
     display: none;
-} */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1030px){
+    .menu-items{
+        display:none;
+    }
+    .hamburger{
+        display: inline;
+    }
+}
+.hamburger-box{
+    display: none;
+    position: absolute;
+    align-items: left;
+}
+.show {display: block;}
 
 /* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO *//* HERO */
 .slideshow{
