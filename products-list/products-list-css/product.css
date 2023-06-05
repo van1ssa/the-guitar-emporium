@@ -110,15 +110,15 @@
 }
 
 .product-card > .favourite {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     border-radius: 50px;
     font-weight: 500;
 
-    position: absolute;
-    top: 5vw;
-    right: 5vw;
+    position: relative;
+    bottom: 29vw;
+    left: 13vw;
 }
 
 .research {
