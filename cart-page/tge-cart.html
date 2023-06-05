@@ -21,7 +21,7 @@
         </section>
         
         <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
-            <a href="tge-homepage.html" class="TGE-logo">
+            <a href="..\homepage\tge-homepage.html" class="TGE-logo">
                 <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
             </a>
             <ul class="menu-items" id="menuItems">    
@@ -49,76 +49,78 @@
         </nav>
     </header>
     
-</main>
-    <section class="page-heading">
-        <h3 class="heading">Your Cart</h3> <h5 class="cart-clear">Remove all</h5>
+<main>
+    <section class="page-heading" id="discard">
+        <h3 class="heading" style="font-size: 1.4rem;">Your Cart</h3>
+        <input type="button" class="cart-clear" value="✖  Remove all" onclick="emptyCart()" id="discard"></input>
     </section>
     <section class="cart-box"> <!-- Can contain more than one article -->
         <article class="product-box">
-            <div class="product-image"><a href="..\product-page\tge-page.html"><img src="..\homepage\homepage-pics\N1.png" alt="cart-1"></a> </div>
+            <div class="product-image"><a href="..\product-page\tge-page.html"><img src="..\cart-page\N1-cart.png" alt="cart-1"></a> </div>
             
             <div class="product-details">
                 <div class="details-left">
-                    <h3 class="brand">Beltona</h3>
+                    <h3 class="brand"  style="font-size: smaller; padding-bottom: 0.5rem;">Beltona</h3>
                     <h2 class="title">Standard Triple Resonator (1994)</h2>
                     <figure><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"><h5>Move to picks</h5></figure>
+                    <figure><img src="..\assets-elements\icon-bin.svg" alt="picks-bin"><h5>Remove</h5></figure>
                 </div>
                 <div class="details-right">
-                    <h2 class="price">$1234var</h2>
+                    <h2 class="price" style="font-family: var(--type-sec);">$4995</h2>
                 </div>
             </div>
         </article>
     </section>
     <br>
-    <section class="subtotal-box">
+    <section class="subtotal-box" id="discard">
         <div class="subtotal-top">
-            <h3 class="subtotal">SUBTOTAL: $1234</h3> <!-- "Last line justified" -->
+            <h3 class="subtotal" style="font-size: 1.4rem;">SUBTOTAL: $4995.00</h3> <!-- "Last line justified" -->
         </div>
         <div class="subtotal-bot">
-            <button class="cont-shop">Continue shopping</button>
+            <button class="cont-shop"><h5>Continue shopping</h5></button>
             <button class="checkout">CHECKOUT</button>
         </div>
     </section>
-    <section class="ship-qns">
+    <br><br>
+    <section class="ship-qns" id="discard">
         <div class="ship-rates">
             <h4>Shipping Rates</h4>
             <div class="table-box">
             <table class="domestic">
                 <tr>
                     <td>Australia (large):</td>
-                    <td>$65.00</td>
+                    <td class="dollar">$65.00</td>
                 </tr>
                 <tr>
                     <td>Australia (medium):</td>
-                    <td>$13.95</td>
+                    <td class="dollar">$13.95</td>
                 </tr>
                 <tr>
                     <td>Australia (small):</td>
-                    <td>$8.95</td>
+                    <td class="dollar">$8.95</td>
                 </tr>
             </table>
             
-            <table>
+            <table class="international">
                 <tr>
                     <td>International (large):</td>
-                    <td>$320.00</td>
+                    <td class="dollar">$320.00</td>
                 </tr>
                 <tr>
                     <td>International (small):</td>
-                    <td>$38.95</td>
+                    <td class="dollar">$38.95</td>
                 </tr>
             </table>
             </div>
         </div>
         <div class="questions">
             <h4>Got questions?</h4>
-            <p>Want to learn more or try out gear in person? <br>We'd be  happy to help you out!
-                <br>
-                Shoot us a message <a href="#contact"><u>here</u></a>.
+            <p>Whether you'd like to learn more about our gear or The <br>Guitar Emporium in general, we'd be  happy to help you out!
+            <br><br>Shoot us a message <a href="#contact"><u>here</u></a>.
             </p>
         </div>
     </section>
-<main>
+</main>
 
     <footer> <!-- Footer -->
         <div class="copyright">
