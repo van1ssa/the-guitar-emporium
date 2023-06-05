@@ -1,0 +1,7 @@
+li.dropdown-tree ul.dropdown-menu-tree{
+    display:none;
+  }
+  
+  li.dropdown-tree.open-tree.active ul.dropdown-menu-tree{
+    display:block;
+  }

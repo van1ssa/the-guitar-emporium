@@ -26,6 +26,7 @@
     padding-left: 50px;
     padding-top: 14rem;
     z-index: -1;
+    background-color: green;
 }
 
 /*acoustic guitar*/

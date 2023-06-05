@@ -18,14 +18,12 @@
   .sidenav {
     height: 100%;
     width: 300px;
-    position: relatiev;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: var(--primary-colour);
     padding-left: 50px;
     padding-top: 4rem;
-    z-index: -1;
   }
 /*acoustic guitar*/
 .sidenav > #heading {
@@ -62,7 +60,6 @@
     padding-right: 40px;
     padding-left: 10px;
   }
-  
   
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
