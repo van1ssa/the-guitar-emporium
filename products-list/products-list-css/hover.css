@@ -136,6 +136,7 @@
   .dropdown-container {
     display: none;
     padding-left: 8px;
+    color: var(--secondary-colour);
   }
   
   /* Optional: Style the caret down icon */
