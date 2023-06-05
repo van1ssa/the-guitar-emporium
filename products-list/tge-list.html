@@ -5,25 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tge-list.css">
-    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="master-styles.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="reset-styling.css">
+    <!-- <link rel="stylesheet" href="content.css"> -->
+
+    <link rel="preconnect" href="#font-pri">
+    <link rel="preconnect" href="#font-sec">
+    <link rel="stylesheet" type="text/css" href="tge-homepage.css">
+    <link rel="stylesheet" href="..\A-Master-Styles\Suisse Intl-webfontkit-20230603-060345\stylesheet.css" type="text/css" charset="utf-8" />
+
     <title>Product List</title>
 </head>
 <body>
-
-      <div class="sidenav">
-        <section id="heading">
-            <h1>ACOUSTIC GUITARS</h1>
-            <p>30 results in inventory</p> <!--how to show the actual result on the page, with java script?-->
+  <header> 
+        <section class="announcement"> <!-- Announcement Banner -->
+            <p>Our brick and mortar store is now closed. <a href="..\contactform\contact.html"><u>Contact us</u></a> directly for repairs and consignments.</p>
         </section>
         
-        <div class="sidebyside">
+        <nav class="nav-bar" id="navBar"> <!-- Nav Bar -->
+            <a href="tge-homepage.html" class="TGE-logo">
+                <img src="..\assets-elements\tge-logo-coloured.svg" alt="TGE-logo" class="logo" width="180vw" style="margin-bottom: 1rem;">
+            </a>
+            <ul class="menu-items" id="menuItems">    
+                <li class="shop-all"><a class="item" href="#shopall">Shop</a>
+                    <ul id="hide" class="shop-dropdown" id="shopDropdown">
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Electric  Guitars</a></li>
+                        <li><a href="tge-list.html">Guitars</a></li>
+                        <li><a  href="">Left-Handed Guitars</a></li>
+                        <li><a href="">Bass Guitars</a></li>
+                        <li><a href="">Peripherals & Parts</a></li>
+                        <li><a href="">Miscellaneous</a></li>
+                    </ul>
+                </li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#services">Services</a></li>
+                <li><a class="item" href="#friends">Our Friends</a></li>
+                <li><a class="item" href="..\contactform\contact.html">Contact</a></li>
+            </ul>
+            <ul class="icon-trio">
+                <li class="icon-each"><img src="..\assets-elements\icon-search.svg" alt="search-icon"></li>
+                <li class="icon-each"><a href="#picks"><img src="..\assets-elements\icon-picks.svg" alt="picks-icon"></a></li>
+                <li class="icon-each"><a href="/cart-page/tge-cart.html"><img src="..\assets-elements\icon-cart.svg" alt="cart-icon"></a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <section id="content">
+    <div class="sidenav">
+      <section id="heading">
+        <h1>ACOUSTIC GUITARS</h1>
+        <br>
+        <p>30 results in inventory</p> <!--how to show the actual result on the page, with java script?-->
+      </section>
+      <br>
+      <div class="sidebyside">
         <h2>FILTER BY</h2>
         <div class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40.987" height="43.786" viewBox="0 0 40.987 43.786">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40.987" height="43.786" viewBox="0 0 40.987 43.786">
             <g id="filter" data-name="Group 446" transform="translate(82.172 21.338)">
               <circle id="Ellipse_25" data-name="Ellipse 25" cx="14.673" cy="14.673" r="14.673" transform="translate(-80.172 -8.898)" fill="none" stroke="#f7e3a0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
               <line id="Line_18" data-name="Line 18" y2="11.569" transform="translate(-65.498 -8.898)" fill="none" stroke="#f7e3a0" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
@@ -36,7 +75,7 @@
       </div>
 
         <!--TODO: change the filter details-->
-        <button class="dropdown-btn">Brand
+          <button class="dropdown-btn">Brand
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-container">
@@ -107,7 +146,8 @@
 
           <!--clear filter btn-->
           <a id="clear_btn" href="#">CLEAR ALL FILTERS</a>
-
+          <br>
+          <br>
           <!--sorting section-->
           <div class="sidebyside">
             <h2>Sort by</h2>
@@ -137,10 +177,11 @@
 
         <div class="product-card">
           <img src="/assets-elements/bluebackground.png" alt="blue" class="product-bg">
-            <img src="/assets-images/Babe_Trav-1-nobg.png" alt="beltona">
+            <img src="/assets-images/Babe_Trav-1-nobg.png" style="transform: rotate(-20deg);" alt="beltona" class="guitarpng">
             <div class="product-info">
               <h3>MARTINEZ</h3>
-              <h2>BABE TRAVELLER (USED)</h2>
+              <br>
+              <h2>BABE TRAVELLER <br>(USED)</h2>
               <h2 class="price">$150</h2>
             </div>
           <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
@@ -148,67 +189,73 @@
 
           <div class="product-card">
             <img src="/assets-elements/yellowbackground.png" alt="yellow" class="product-bg">
-            <img src="/assets-images/gibson-tg50-1-nobg.png" alt="gibson">
+            <img src="/assets-images/gibson-tg50-1-nobg.png" style="transform: rotate(-20deg);" alt="gibson" class="guitarpng">
             <div class="product-info">
-              <h3>MARTINEZ</h3>
-              <h2>BABE TRAVELLER (USED)</h2>
-              <h2 class="price">$150</h2>
+              <h3>GIBSON</h3>
+              <br>
+              <h2>TENOR GUITAR TG-50 (c.1935)</h2>
+              <h2 class="price">$3,495</h2>
             </div>
           <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
             <img src="/assets-elements/bluebackground.png" alt="yellow" class="product-bg">
-            <img src="/assets-images/beltona-tricone-1-nobg.png" alt="beltona">
+            <img src="/assets-images/beltona-tricone-1-nobg.png" style="transform: rotate(-20deg);" alt="beltona" class="guitarpng">
             <div class="product-info">
-              <h3>MARTINEZ</h3>
-              <h2>BABE TRAVELLER (USED)</h2>
-              <h2 class="price">$150</h2>
+              <h3>BELTONA</h3>
+              <br>
+              <h2>TRIPLE RESONATOR (c.1994)</h2>
+              <h2 class="price">$4,995</h2>
             </div>
           <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
             <img src="/assets-elements/yellowbackground.png" alt="yellow" class="product-bg">
-            <img src="/assets-images/gretsch-x75f-1-nobg.png" alt="gretsch">
+            <img src="/assets-images/gretsch-x75f-1-nobg.png" style="transform: rotate(-20deg);" alt="gretsch" class="guitarpng">
             <div class="product-info">
-              <h3>MARTINEZ</h3>
-              <h2>BABE TRAVELLER (USED)</h2>
-              <h2 class="price">$150</h2>
+              <h3>GRETSCG</h3>
+              <br>
+              <h2>SYNCHROMATIC X75F (c.1948)</h2>
+              <h2 class="price">$3,995</h2>
             </div>
           <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
             <img src="/assets-elements/bluebackground.png" alt="blue" class="product-bg">
-            <img src="/assets-images/LarriveeOM03MH-1-nobg.png" alt="larrivee">
+            <img src="/assets-images/LarriveeOM03MH-1-nobg.png" style="transform: rotate(-20deg);" alt="larrivee" class="guitarpng">
             <div class="product-info">
-              <h>MARTINEZ</h>
-              <h2>BABE TRAVELLER (USED)</h2>
-              <h2 class="price">$150</h2>
+              <h3>LARRIVEE</h3>
+              <br>
+              <h2>OM-03-MH <br>(c.2011)</h2>
+              <h2 class="price">$3,995</h2>
             </div>
           <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
           </div>
 
           <div class="product-card">
             <img src="/assets-elements/yellowbackground.png" alt="yellow" class="product-bg">
-            <img src="/assets-images/Mini_Maton-1-nobg.png" alt="maton">
+            <img src="/assets-images/Mini_Maton-1-nobg.png" style="transform: rotate(-20deg);" alt="maton" class="guitarpng">
             <div class="product-info">
-              <h3>MARTINEZ</h3>
-              <h2>BABE TRAVELLER (USED)</h2>
-              <h2 class="price">$150</h2>
+              <h3>MATON</h3>
+              <br>
+              <h2>EMBW-12 Mini <br>(c.2019)</h2>
+              <h2 class="price">$1,750</h2>
             </div>
           <a class="favourite" href="#"><img src="/assets-elements/icon-picks-hovered.svg" alt="favourite"></a>
           </div>
+
+          <div class="research">
+            <p>Showing 1-6 of 30 results</p>
+            <p>&#60; 1 2 3 ... 5 > </p>
+          </div>
   
       </section>
-
-      <div class="research">
-        <p>Showing 1-6 of 30 results</p>
-        <p>&#60; 1 2 3 ... 5 > </1></p>
-      </div>
-
     </div>
+
+  </section>
 
 
     <script>

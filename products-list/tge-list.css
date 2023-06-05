@@ -1,9 +1,17 @@
+@import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
+
 :root {
   --primary-colour: #E14842;
   --secondary-colour: #F7E3A0;
   --teritary-colour:#464C7F;
   --black-colour: #191919;
   --white-colour: #FFF6D8;
+
+  /* Headers & Sub-headers - Suisse Int'l Bold*/
+  --type-pri: "suisse_intlbold", sans-serif;
+  /* Paragraphs & Body- Suisse Int'l Reg*/
+ --type-sec: "suisse_intlregular", sans-serif;
 }
 
 body{

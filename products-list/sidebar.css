@@ -1,15 +1,19 @@
+@import url(/A-Master-Styles/reset-styling.css);
+@import url(/A-Master-Styles/master-styles.css);
+
 :root {
   --primary-colour: #E14842;
   --secondary-colour: #F7E3A0;
   --teritary-colour:#464C7F;
   --black-colour: #191919;
   --white-colour: #FFF6D8;
+
+  /* Headers & Sub-headers - Suisse Int'l Bold*/
+  --type-pri: "suisse_intlbold", sans-serif;
+  /* Paragraphs & Body- Suisse Int'l Reg*/
+ --type-sec: "suisse_intlregular", sans-serif;
 }
 
-body{
-  overflow-x: hidden;
-}
-  
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
@@ -19,8 +23,9 @@ body{
     top: 0;
     left: 0;
     background-color: var(--primary-colour);
-    overflow-x: hidden;
     padding-left: 50px;
+    padding-top: 14rem;
+    z-index: -1;
 }
 
 /*acoustic guitar*/
@@ -30,7 +35,9 @@ body{
 }
 
 #heading h1 {
+  color: white;
   font-size: 40px;
+  letter-spacing: 1px;
 }
 
 /* filter by, sort by*/
@@ -38,6 +45,7 @@ body{
   font-size: 30px;
   text-transform: uppercase;
   color: var(--secondary-colour);
+  letter-spacing: 1px;
 }
 
 .sidenav > .sidebyside > .icon {
@@ -54,10 +62,12 @@ body{
 
 /*clear*/
 #clear_btn{
+  font-family: var(--type-pri);
+  letter-spacing: 1px;
   color: white;
   text-align: center;
-  margin-top: 5px;
-  border: 2px solid white;
+  margin-top: 10px;
+  border: 3px solid white;
   border-width: 2px;
 }
 
@@ -67,36 +77,42 @@ body{
   text-align: center;
   margin-top: 5px;
   border-width: 2px;
+  transition: .3s;
 }
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn, .sorting-btn {
-  padding: 6px 8px 6px 16px;
+  padding: 8px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
   color: var(--secondary-colour);
+  font-family: var(--type-sec);
+  line-height: 1.5rem;
   display: block;
-  border: none;
-  background: none;
+
   width:100%;
   text-align: left;
   cursor: pointer;
   outline: none;
-  overflow-x: hidden;
 }
-
 .dropdown-btn{
-  color: var(--black-colour);
-  background-color: var(--secondary-colour);
+  color: black;
+  font-family: var(--type-pri);
   padding: 10px;
   border: 5px solid var(--primary-colour);
   border-spacing: 10px;
-  border-width: 5px 0 0 0;
+  border-width: 10px 0 0 0;
+  box-shadow: none;
+  text-transform: capitalize;
 }
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: var(--white-colour);
+}
+
+.dropdown-btn:hover {
+  color: black;
 }
 
 /* Main content */
@@ -110,12 +126,11 @@ body{
 .active {
   background-color: var(--secondary-colour);
   color: var(--black-colour);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
+  color: var(--secondary-colour);
   display: none;
   background-color: var(--primary-colour);
   padding-left: 20px;
